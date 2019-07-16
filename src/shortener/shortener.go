@@ -46,6 +46,14 @@ func Add(longUrl string, cache *gocache.Cache) (string, bool) {
 	return key[:index], true
 }
 
+func Redirect(key string, c *gocache.Cache) bool {
+	item, isExist := c.Get(key)
+	if isExist {
+		item.(address).clicks++
+	}
+	return isExist
+}
+
 func isExist(key string, c *gocache.Cache) bool {
 	_, isExist := c.Get(key)
 	return isExist
