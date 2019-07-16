@@ -1,19 +1,26 @@
 package main
 
 import (
-	"../shortener"
-	"fmt"
+	"github.com/labstack/echo"
 	gocache "github.com/patrickmn/go-cache"
+	"net/http"
 )
 
 func main() {
-	cache := gocache.New(gocache.NoExpiration, gocache.NoExpiration)
-	for i := 0; i < 50; i++ {
-		a, ok := shortener.Add("hhhh", cache)
-		if !ok {
-			fmt.Println("FUCK")
-		}
-		fmt.Println(a)
-	}
-	shortener.Print(cache)
+	e := echo.New()
+	gocache.New(gocache.NoExpiration, gocache.NoExpiration)
+
+	e.GET("/", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Hello, World1!")
+	})
+
+	e.POST("/add", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Hello, World2!")
+	})
+
+	e.GET("/:key", func(c echo.Context) error {
+		return c.String(http.StatusOK, "Hello, World3!")
+	})
+
+	e.Logger.Fatal(e.Start(":1323"))
 }
