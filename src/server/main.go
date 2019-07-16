@@ -12,6 +12,8 @@ type Response struct {
 	ShortURL string `json:"short_url,omitempty"`
 }
 
+var baseUrl string = "localhost:3000"
+
 func main() {
 	e := echo.New()
 	cache := gocache.New(gocache.NoExpiration, gocache.NoExpiration)
@@ -29,7 +31,7 @@ func main() {
 		if !ok {
 			return c.JSON(http.StatusBadRequest, &Response{Msg: "An error occurred when program tries to create short url"})
 		}
-		return c.JSON(http.StatusCreated, &Response{ShortURL: key})
+		return c.JSON(http.StatusCreated, &Response{ShortURL: baseUrl + "/" + key})
 	})
 
 	e.GET("/:key", func(c echo.Context) error {
