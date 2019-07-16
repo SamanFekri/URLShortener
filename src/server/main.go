@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"../shortener"
+)
 
 func main() {
-	fmt.Println("Hi")
+	shortener.Print("salam")
 }
