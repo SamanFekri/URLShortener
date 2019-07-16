@@ -47,22 +47,26 @@ func Add(longUrl string, cache *gocache.Cache) (string, bool) {
 	return key[:index], true
 }
 
-func Redirect(key string, c *gocache.Cache) (bool, error) {
+func Redirect(key string, c *gocache.Cache) (bool, string, error) {
 	item, isExist := c.Get(key)
+	tmpUrl := ""
 	if isExist {
-		item = address{item.(address).url, item.(address).clicks + 1}
+		tmpUrl = item.(address).url
+		item = address{tmpUrl, item.(address).clicks + 1}
 		err := c.Replace(key, item, gocache.NoExpiration)
 		if err != nil {
-			return false, err
+			return false, "", err
 		}
 	}
-	return isExist, nil
+	return isExist, tmpUrl, nil
 }
 
-func Print(c *gocache.Cache) {
+func Print(c *gocache.Cache) string {
+	result := ""
 	for key, item := range c.Items() {
-		fmt.Printf("key:%v url:%v clicks:%d\n", key, item.Object.(address).url, item.Object.(address).clicks)
+		result += fmt.Sprintf("key:%v url:%v clicks:%d\n", key, item.Object.(address).url, item.Object.(address).clicks)
 	}
+	return result
 }
 
 func isExist(key string, c *gocache.Cache) bool {
