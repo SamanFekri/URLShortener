@@ -3,6 +3,7 @@ package main
 import (
 	"../shortener"
 	"github.com/labstack/echo"
+	"github.com/labstack/echo/middleware"
 	gocache "github.com/patrickmn/go-cache"
 	"net/http"
 )
@@ -16,11 +17,11 @@ var baseUrl string = "localhost:3000"
 
 func main() {
 	e := echo.New()
+	e.Use(middleware.Logger())
 	cache := gocache.New(gocache.NoExpiration, gocache.NoExpiration)
 
-	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, shortener.Print(cache))
-	})
+	e.File("/", "src/server/UI/index.html")
+	e.Static("/assets", "src/server/UI/assets")
 
 	e.POST("/add", func(c echo.Context) error {
 		longUrl := c.FormValue("long_url")

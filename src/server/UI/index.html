@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SKings URL shortener</title>
+    <link rel="icon" href="assets/SKings.png" type="image/png" sizes="16x16">
+</head>
+<body>
+    Insert URL: <input id="input_url" name="long_url" type="text"/>
+    <input type="submit" value="create" onclick="create()"/>
+    <p id="error_msg" style="color: red; font-size: .5em"></p>
+    <a id="short_url"></a>
+</body>
+<script type="text/javascript">
+    function create() {
+        let long_url = document.getElementById('input_url').value
+        postAjax('/add', {long_url: long_url}, alert('hi'))
+    }
+    function postAjax(url, data, success) {
+        var params = typeof data == 'string' ? data : Object.keys(data).map(
+            function(k){ return encodeURIComponent(k) + '=' + encodeURIComponent(data[k]) }
+        ).join('&');
+
+        var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
+        xhr.open('POST', url);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState>3 && xhr.status==200) { success(xhr.responseText); }
+        };
+        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.send(params);
+        return xhr;
+    }
+</script>
+</html>
