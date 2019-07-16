@@ -15,5 +15,5 @@ func main() {
 		}
 		fmt.Println(a)
 	}
-
+	shortener.Print(cache)
 }

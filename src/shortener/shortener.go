@@ -3,6 +3,7 @@ package shortener
 import (
 	"crypto/sha1"
 	"encoding/base64"
+	"fmt"
 	gocache "github.com/patrickmn/go-cache"
 	"net/url"
 	"strings"
@@ -46,12 +47,22 @@ func Add(longUrl string, cache *gocache.Cache) (string, bool) {
 	return key[:index], true
 }
 
-func Redirect(key string, c *gocache.Cache) bool {
+func Redirect(key string, c *gocache.Cache) (bool, error) {
 	item, isExist := c.Get(key)
 	if isExist {
-		item.(address).clicks++
+		item = address{item.(address).url, item.(address).clicks + 1}
+		err := c.Replace(key, item, gocache.NoExpiration)
+		if err != nil {
+			return false, err
+		}
 	}
-	return isExist
+	return isExist, nil
+}
+
+func Print(c *gocache.Cache) {
+	for key, item := range c.Items() {
+		fmt.Printf("key:%v url:%v clicks:%d\n", key, item.Object.(address).url, item.Object.(address).clicks)
+	}
 }
 
 func isExist(key string, c *gocache.Cache) bool {
