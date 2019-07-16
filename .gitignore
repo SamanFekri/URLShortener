@@ -16,3 +16,6 @@
 
 # for macos
 .DS_Storel
+
+# remove .lock file
+*.lock
