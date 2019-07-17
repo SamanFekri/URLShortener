@@ -64,7 +64,7 @@ func main() {
 		if !isExist {
 			return c.JSON(http.StatusNotFound, &Response{Msg: "This url is not found"})
 		}
-		shortener.Save("db.gob", cache, mux)
+		shortener.Save(dbPath, cache, mux)
 		return c.Redirect(http.StatusTemporaryRedirect, url)
 	})
 
