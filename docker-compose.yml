@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  go:
+    build:
+      context: .
+      dockerfile: src/Dockerfile
+    image: urlshortener-server
+    container_name: urlshortener-server
+    networks:
+      - urlshortener
+
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    image: urlshortener-nginx
+    container_name: urlshortener-nginx
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - urlshortener
+
+networks:
+  urlshortener:
+    driver: bridge
