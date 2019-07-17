@@ -19,3 +19,6 @@
 
 # remove .lock file
 *.lock
+
+# remove gob folder
+*.gob

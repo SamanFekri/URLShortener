@@ -18,14 +18,15 @@ type Response struct {
 	ShortURL string `json:"short_url,omitempty"`
 }
 
-var baseUrl string = "http://localhost:3000"
+var baseUrl = "http://localhost:3000"
 var mux sync.Mutex
+var dbPath = "./src/server/db.gob"
 
 func main() {
 	e := echo.New()
 	e.Use(middleware.Logger())
 
-	cache, err := shortener.Load("db.gob")
+	cache, err := shortener.Load(dbPath)
 	if err != nil {
 		cache = gocache.New(gocache.NoExpiration, gocache.NoExpiration)
 	}
@@ -46,7 +47,7 @@ func main() {
 		if !ok {
 			return c.JSON(http.StatusBadRequest, &Response{Msg: "An error occurred when program tries to create short url"})
 		}
-		shortener.Save("db.gob", cache, mux)
+		shortener.Save(dbPath, cache, mux)
 		return c.JSON(http.StatusCreated, &Response{ShortURL: baseUrl + "/" + key})
 	})
 
