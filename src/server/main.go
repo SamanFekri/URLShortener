@@ -68,5 +68,5 @@ func main() {
 		return c.Redirect(http.StatusTemporaryRedirect, url)
 	})
 
-	e.Logger.Fatal(e.Start(":8585"))
+	e.Logger.Fatal(e.Start(":80"))
 }
