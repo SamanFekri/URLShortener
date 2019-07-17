@@ -5,11 +5,7 @@ RUN apk add git
 
 WORKDIR /go/src/urlshotener
 COPY ./src .
-COPY Gopkg.toml Gopkg.toml
 
-RUN go get -u github.com/golang/dep/cmd/dep
-RUN dep ensure
-
-# Build my app
-RUN go build -o ./src/server/main.go
+RUN go get -d -v ./...
+RUN go install -v ./...
 CMD ["./src/server/main"]
