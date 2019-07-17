@@ -5,7 +5,7 @@ RUN apk add git
 
 WORKDIR /go/src/urlshotener
 COPY ./src .
-COPY Gopkg.lock Gopkg.lock
+COPY Gopkg.toml Gopkg.toml
 
 RUN go get -u github.com/golang/dep/cmd/dep
 RUN dep ensure
