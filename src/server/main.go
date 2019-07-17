@@ -43,6 +43,10 @@ func main() {
 		return c.JSON(http.StatusCreated, &Response{ShortURL: baseUrl + "/" + key})
 	})
 
+	e.GET("/all", func(c echo.Context) error {
+		return c.String(http.StatusOK, shortener.Print(cache))
+	})
+
 	e.GET("/:key", func(c echo.Context) error {
 		key := c.Param("key")
 		isExist, url, err := shortener.Redirect(key, cache)
@@ -52,7 +56,7 @@ func main() {
 		if !isExist {
 			return c.JSON(http.StatusNotFound, &Response{Msg: "This url is not found"})
 		}
-		return c.Redirect(http.StatusPermanentRedirect, url)
+		return c.Redirect(http.StatusTemporaryRedirect, url)
 	})
 
 	e.Logger.Fatal(e.Start(":3000"))
