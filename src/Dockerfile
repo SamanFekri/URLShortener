@@ -6,6 +6,6 @@ RUN apk add git
 WORKDIR /go/src/urlshotener
 COPY ./src .
 
-RUN go get -d -v .
-RUN go install -v .
+RUN go get -d -v ./src/...
+RUN go install -v ./src/...
 CMD ["./src/server/main"]
