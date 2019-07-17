@@ -6,6 +6,7 @@ import (
 	"github.com/labstack/echo/middleware"
 	gocache "github.com/patrickmn/go-cache"
 	"net/http"
+	"sync"
 )
 
 type Request struct {
@@ -18,11 +19,16 @@ type Response struct {
 }
 
 var baseUrl string = "http://localhost:3000"
+var mux sync.Mutex
 
 func main() {
 	e := echo.New()
 	e.Use(middleware.Logger())
-	cache := gocache.New(gocache.NoExpiration, gocache.NoExpiration)
+
+	cache, err := shortener.Load("db.gob")
+	if err != nil {
+		cache = gocache.New(gocache.NoExpiration, gocache.NoExpiration)
+	}
 
 	e.File("/", "src/server/UI/index.html")
 	e.Static("/assets", "src/server/UI/assets")
@@ -40,6 +46,7 @@ func main() {
 		if !ok {
 			return c.JSON(http.StatusBadRequest, &Response{Msg: "An error occurred when program tries to create short url"})
 		}
+		shortener.Save("db.gob", cache, mux)
 		return c.JSON(http.StatusCreated, &Response{ShortURL: baseUrl + "/" + key})
 	})
 
@@ -56,6 +63,7 @@ func main() {
 		if !isExist {
 			return c.JSON(http.StatusNotFound, &Response{Msg: "This url is not found"})
 		}
+		shortener.Save("db.gob", cache, mux)
 		return c.Redirect(http.StatusTemporaryRedirect, url)
 	})
 
