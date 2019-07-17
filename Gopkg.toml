@@ -24,6 +24,7 @@
 #   go-tests = true
 #   unused-packages = true
 
+required = ["github.com/labstack/echo", "github.com/patrickmn/go-cache"]
 
 [prune]
   go-tests = true
