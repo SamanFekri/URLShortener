@@ -19,6 +19,15 @@ func Add(longUrl string, cache *gocache.Cache) (string, bool) {
 	if longUrl == "" {
 		return "", false
 	}
+
+	if !isValidUrl(longUrl) {
+		longUrl = "http://" + longUrl
+	}
+
+	if !isValidUrl(longUrl) {
+		return "", false
+	}
+
 	hasher := sha1.New()
 	hasher.Write([]byte(longUrl + time.Now().String()))
 	sha := base64.URLEncoding.EncodeToString(hasher.Sum(nil))
@@ -72,4 +81,14 @@ func Print(c *gocache.Cache) string {
 func isExist(key string, c *gocache.Cache) bool {
 	_, isExist := c.Get(key)
 	return isExist
+}
+
+// isValidUrl tests a string to determine if it is a url or not.
+func isValidUrl(toTest string) bool {
+	_, err := url.ParseRequestURI(toTest)
+	if err != nil {
+		return false
+	} else {
+		return true
+	}
 }

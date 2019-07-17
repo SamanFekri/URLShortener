@@ -8,12 +8,16 @@ import (
 	"net/http"
 )
 
+type Request struct {
+	LongUrl string `json:"long_url" form:"long_url" xml:"long_url" validate:"required"`
+}
+
 type Response struct {
 	Msg      string `json:"msg,omitempty"`
 	ShortURL string `json:"short_url,omitempty"`
 }
 
-var baseUrl string = "localhost:3000"
+var baseUrl string = "http://localhost:3000"
 
 func main() {
 	e := echo.New()
@@ -24,7 +28,11 @@ func main() {
 	e.Static("/assets", "src/server/UI/assets")
 
 	e.POST("/add", func(c echo.Context) error {
-		longUrl := c.FormValue("long_url")
+		r := new(Request)
+		if err := c.Bind(r); err != nil {
+			return c.JSON(http.StatusBadRequest, &Response{Msg: "Important parameter not set"})
+		}
+		longUrl := r.LongUrl
 		if longUrl == "" {
 			return c.JSON(http.StatusBadRequest, &Response{Msg: "Important parameter not set"})
 		}
