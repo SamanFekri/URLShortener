@@ -11,5 +11,5 @@ RUN go get -u github.com/golang/dep/cmd/dep
 RUN dep ensure
 
 # Build my app
-RUN go install -v ./src/server
+RUN go build -O ./src/server/main.go
 CMD ["./src/server/main"]
