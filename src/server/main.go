@@ -1,12 +1,12 @@
 package main
 
 import (
-	"urlshortener/shortener"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 	gocache "github.com/patrickmn/go-cache"
 	"net/http"
 	"sync"
+	"urlshortener/shortener"
 )
 
 type Request struct {
@@ -18,7 +18,7 @@ type Response struct {
 	ShortURL string `json:"short_url,omitempty"`
 }
 
-var baseUrl = "http://localhost:3000"
+var baseUrl = "http://hallows.ir"
 var mux sync.Mutex
 var dbPath = "./src/server/db.gob"
 
