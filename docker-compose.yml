@@ -8,7 +8,7 @@ services:
     image: urlshortener-server
     container_name: urlshortener-server
     volumes:
-      - ./src/server/UI:/go/bin/UI:
+      - ./src/server/UI:/go/bin/UI
     networks:
       - urlshortener
 
