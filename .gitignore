@@ -17,8 +17,6 @@
 # for macos
 .DS_Storel
 
-# remove .lock file
-*.lock
 
 # remove gob folder
 *.gob
