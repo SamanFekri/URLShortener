@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../shortener"
+	"urlshortener/shortener"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 	gocache "github.com/patrickmn/go-cache"
