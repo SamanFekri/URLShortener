@@ -4,7 +4,7 @@ services:
   go:
     build:
       context: .
-      dockerfile: src/Dockerfile
+      dockerfile: Dockerfile
     image: urlshortener-server
     container_name: urlshortener-server
     networks:
