@@ -9,6 +9,7 @@ services:
     container_name: urlshortener-server
     volumes:
       - ./src/server/UI:/go/bin/UI
+      - ./db.gob:/go/bin/db.gob
     networks:
       - urlshortener
 

@@ -31,8 +31,8 @@ func main() {
 		cache = gocache.New(gocache.NoExpiration, gocache.NoExpiration)
 	}
 
-	e.File("/", "src/server/UI/index.html")
-	e.Static("/assets", "src/server/UI/assets")
+	e.File("/", "/UI/index.html")
+	e.Static("/assets", "/UI/assets")
 
 	e.POST("/add", func(c echo.Context) error {
 		r := new(Request)
