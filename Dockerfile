@@ -5,13 +5,11 @@ RUN apk add git
 
 RUN go get -u github.com/golang/dep/cmd/dep
 WORKDIR /go/src/urlshortener
-COPY ./src .
+COPY ./src/server/main.go ./server/main.go
+COPY ./src/shortener/shortener.go ./shortener/shortener.go
 COPY ./Gopkg.toml .
 COPY ./Gopkg.lock .
 RUN dep ensure
 
-RUN go install -v ./...
-
 RUN apk add bash
-RUN ["chmod", "777", "/go/bin/server"]
-CMD ["/go/bin/server"]
+CMD ["go", "run", "/go/src/urlshortener/server/main.go"]

@@ -20,7 +20,7 @@ type Response struct {
 
 var baseUrl = "http://hallows.ir"
 var mux sync.Mutex
-var dbPath = "./src/server/db.gob"
+var dbPath = "db.gob"
 
 func main() {
 	e := echo.New()
@@ -31,8 +31,8 @@ func main() {
 		cache = gocache.New(gocache.NoExpiration, gocache.NoExpiration)
 	}
 
-	e.File("/", "/UI/index.html")
-	e.Static("/assets", "/UI/assets")
+	e.File("/", "./server/UI/index.html")
+	e.Static("/assets", "./server/UI/assets")
 
 	e.POST("/add", func(c echo.Context) error {
 		r := new(Request)
@@ -47,7 +47,10 @@ func main() {
 		if !ok {
 			return c.JSON(http.StatusBadRequest, &Response{Msg: "An error occurred when program tries to create short url"})
 		}
-		shortener.Save(dbPath, cache, mux)
+		err = shortener.Save(dbPath, cache, mux)
+		if err != nil {
+			return c.JSON(http.StatusBadRequest, &Response{Msg: err.Error()})
+		}
 		return c.JSON(http.StatusCreated, &Response{ShortURL: baseUrl + "/" + key})
 	})
 
