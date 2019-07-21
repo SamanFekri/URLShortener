@@ -16,7 +16,3 @@
 
 # for macos
 .DS_Storel
-
-
-# remove gob folder
-*.gob
