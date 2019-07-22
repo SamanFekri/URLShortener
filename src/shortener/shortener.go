@@ -8,6 +8,7 @@ import (
 	gocache "github.com/patrickmn/go-cache"
 	"net/url"
 	"os"
+	"regexp"
 	"strings"
 	"sync"
 	"time"
@@ -98,7 +99,8 @@ func isValidUrl(toTest string) bool {
 	if err != nil {
 		return false
 	} else {
-		return true
+		re := regexp.MustCompile(`^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+`)
+		return re.MatchString(toTest)
 	}
 }
 
