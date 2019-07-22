@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <title>SKings URL shortener</title>
     <link rel="icon" href="assets/SKings.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="assets/main.css">
+    <script src="https://kit.fontawesome.com/8ee9717db6.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    Insert URL: <input id="input_url" name="long_url" type="text"/>
-    <input type="submit" value="create" onclick="create()"/>
-    <p id="error_msg" style="color: red; font-size: .5em"></p>
-    <a id="short_url"></a>
+    <img src="assets/SKings.png" style="width: 100px; height: 100px; margin: 0 auto; display: block;">
+    <p style="margin: 0; text-align: center; font-size: 2em; color: white;">SKings URL Shortener</p>
+    <div class="search">
+        <input id="input_url" type="text" class="search-box" />
+        <span class="search-button">
+            <span class="search-icon fas fa-link"></span>
+        </span>
+        <div id="err_div" style="display: none; background-color: #242628;border-top: 1px solid white; padding: 0.5em 0;">
+            <p id="error_msg" style="color: red; font-size: 1.5em; margin: 0.5em 1.5em;"></p>
+        </div>
+        <div id="link_div" style="display: none; background-color: #242628;border-top: 1px solid white;padding: 0.5em 0;">
+            <a id="short_url" target="_blank" style="color: #00FEDE; font-size: 1.5em; margin: 0.5em 1.5em;"></a>
+            <span id="copy_btn" class="fas fa-clone"></span>
+        </div>
+    </div>
 </body>
 <script type="text/javascript">
+    let st = 0;
     function create() {
         $('#short_url').html("")
         $('#short_url').attr("href", "")
@@ -23,10 +37,36 @@
             function(result){
                 $('#short_url').html(result.short_url)
                 $('#short_url').attr("href", result.short_url)
+                $('#link_div').css("display", "block")
+                $('#err_div').css("display", "none")
             }
         ).fail(function (result) {
             $('#error_msg').html(result.responseJSON.msg)
+            $('#err_div').css("display", "block")
+            $('#link_div').css("display", "none")
         });
+    }
+
+    $('.search-button').click(function(){
+        if (st == 0) {
+            $(this).parent().toggleClass('open');
+            $('#input_url').focus();
+            st = 1
+        } else {
+            create();
+        }
+    });
+
+    $('#copy_btn').click( function () {
+        copyToClipboard($('#short_url'))
+    })
+
+    function copyToClipboard(element) {
+        let $temp = $("<input>");
+        $("body").append($temp);
+        $temp.val($(element).text()).select();
+        document.execCommand("copy");
+        $temp.remove();
     }
 </script>
 </html>
