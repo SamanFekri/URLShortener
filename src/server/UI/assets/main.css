@@ -80,4 +80,5 @@ body {
     cursor: pointer;
     cursor: hand;
     color: #00FEDE;
+    transition: all .5s ease;
 }
