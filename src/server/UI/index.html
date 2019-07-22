@@ -13,16 +13,16 @@
     <img src="assets/SKings.png" style="width: 100px; height: 100px; margin: 0 auto; display: block;">
     <p style="margin: 0; text-align: center; font-size: 2em; color: white;">SKings URL Shortener</p>
     <div class="search">
-        <input id="input_url" type="text" class="search-box" />
+        <input id="input_url" type="text" class="search-box" tabindex="1" style="display: none"/>
         <span class="search-button">
-            <span class="search-icon fas fa-link"></span>
+            <span class="search-icon fas fa-link" tabindex="0"></span>
         </span>
         <div id="err_div" style="display: none; background-color: #242628;border-top: 1px solid white; padding: 0.5em 0;">
             <p id="error_msg" style="color: red; font-size: 1.5em; margin: 0.5em 1.5em;"></p>
         </div>
         <div id="link_div" style="display: none; background-color: #242628;border-top: 1px solid white;padding: 0.5em 0;">
-            <a id="short_url" target="_blank" style="color: #00FEDE; font-size: 1.5em; margin: 0.5em 1.5em;"></a>
-            <span id="copy_btn" class="fas fa-clone"></span>
+            <a id="short_url" target="_blank" tabindex="2" style="color: #00FEDE; font-size: 1.5em; margin: 0.5em 1.5em;"></a>
+            <span id="copy_btn" class="fas fa-clone" tabindex="3"></span>
         </div>
     </div>
 </body>
@@ -49,9 +49,7 @@
 
     $('.search-button').click(function(){
         if (st == 0) {
-            $(this).parent().toggleClass('open');
-            $('#input_url').focus();
-            st = 1
+            openSearchBar()
         } else {
             create();
         }
@@ -60,7 +58,6 @@
     $('#copy_btn').click( function () {
         copyToClipboard($('#short_url'))
     })
-
     function copyToClipboard(element) {
         let $temp = $("<input>");
         $("body").append($temp);
@@ -68,5 +65,39 @@
         document.execCommand("copy");
         $temp.remove();
     }
+
+    $('#input_url').keypress(function (e) {
+        if(e.which == 13) {
+            create()
+        }
+    })
+
+    $('.search-icon').focusin(function () {
+        if (st == 0) {
+            openSearchBar()
+        }
+    })
+
+    function openSearchBar() {
+        $('.search-button').parent().toggleClass('open');
+        $('#input_url').css("display", "block");
+        $('#input_url').focus();
+        st = 1
+    }
+    $('.search-icon').keypress(function (e) {
+        if(e.which == 13) {
+            create()
+        }
+    })
+    $('#short_url').keypress(function (e) {
+        if(e.which == 13) {
+
+        }
+    })
+    $('#copy_btn').keypress(function (e) {
+        if(e.which == 13) {
+            copyToClipboard($('#short_url'))
+        }
+    })
 </script>
 </html>
