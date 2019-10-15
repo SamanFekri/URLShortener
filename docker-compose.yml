@@ -24,7 +24,11 @@ services:
       - 443:443
     networks:
       - urlshortener
+      - nginxnet
 
 networks:
   urlshortener:
     driver: bridge
+  nginxnet:
+    external:
+      name: nginxnet

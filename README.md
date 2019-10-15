@@ -1,9 +1,9 @@
 # URLShortener
 Simple url shortener as a serivce with go  
-You can see the demo [here](http://hallows.ir)
+You can see the demo [here](http://s.hallows.ir)
 
 ## How use this service?
-For get the short form of your url you can send a HTTP ``post`` request to [hallows.ir/add](http://halows.ir/add):
+For get the short form of your url you can send a HTTP ``post`` request to [hallows.ir/add](http://s.halows.ir/add):
 ### Request
 ```JSON
 {

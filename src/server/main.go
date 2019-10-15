@@ -18,7 +18,7 @@ type Response struct {
 	ShortURL string `json:"short_url,omitempty"`
 }
 
-var baseUrl = "http://hallows.ir"
+var baseUrl = "http://s.hallows.ir"
 var mux sync.Mutex
 var dbPath = "db.gob"
 
