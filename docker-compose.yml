@@ -14,14 +14,14 @@ services:
       - urlshortener
 
   nginx:
-    build:
-      context: .
-      dockerfile: nginx/Dockerfile
-    image: urlshortener-nginx
+    image: nginx:1.16.0
     container_name: urlshortener-nginx
     ports:
       - 80:80
       - 443:443
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/vhosts:/etc/nginx/vhosts.d
     networks:
       - urlshortener
       - nginxnet
