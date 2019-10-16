@@ -54,6 +54,8 @@ services:
       - mysqldb
     networks:
       - urlshortener
+    volumes:
+      - ./wordpress/upload.ini:/usr/local/etc/php/conf.d/uploads.ini
 
 
 networks:
