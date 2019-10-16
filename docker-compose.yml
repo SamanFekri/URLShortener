@@ -26,9 +26,37 @@ services:
       - urlshortener
       - nginxnet
 
+  mysqldb:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: deathly
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: skings
+      MYSQL_PASSWORD: mysqlishere
+    networks:
+      - urlshortener
+
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: mysqldb:3306
+      WORDPRESS_DB_USER: skings
+      WORDPRESS_DB_PASSWORD: mysqlishere
+      WORDPRESS_DB_NAME: wordpress
+
+    depends_on:
+      - mysqldb
+
+
 networks:
   urlshortener:
     driver: bridge
   nginxnet:
     external:
       name: nginxnet
+volumes:
+  db_data: {}
