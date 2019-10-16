@@ -25,6 +25,9 @@ services:
     networks:
       - urlshortener
       - nginxnet
+    depends_on:
+      - go
+      - wordpress
 
   mysqldb:
     image: mysql:5.7
