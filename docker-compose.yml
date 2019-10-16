@@ -47,9 +47,10 @@ services:
       WORDPRESS_DB_USER: skings
       WORDPRESS_DB_PASSWORD: mysqlishere
       WORDPRESS_DB_NAME: wordpress
-
     depends_on:
       - mysqldb
+    networks:
+      - urlshortener
 
 
 networks:
