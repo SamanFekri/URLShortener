@@ -1,0 +1,1 @@
+!function(a){"use strict";var b={init:function(){this.metabox.tab()},megamenu:{select_image:function(){}},metabox:{element:"#postbox-container-2 #normal-sortables",tab:function(){}}};a(document).ready(function(){b.init()})}(jQuery);
