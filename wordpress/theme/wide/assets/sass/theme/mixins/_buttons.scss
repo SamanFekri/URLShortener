@@ -1,0 +1,59 @@
+@mixin button-variables-outline($color, $background, $border, $colorhover, $bghover, $borderhover ) {
+    color: $color;
+    border-style: solid;
+    background-color: $background;
+    border-color: $border;
+    border-radius:2px;
+    font-family: $font-family-once;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    height: auto;
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: $colorhover;
+        background-color: $bghover;
+        border-color: $borderhover;
+        box-shadow: none;
+    }
+    .open & {
+    &.dropdown-toggle {
+      color: $colorhover;
+      background-color: $bghover;
+      border-color: $borderhover ;
+    }
+    }
+    &:active,
+    &.active {
+    background-image: none;
+    }
+    .open & {
+    &.dropdown-toggle {
+      background-image: none;
+    }
+    }
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $border;
+    }
+    }
+    .badge {
+    color: $background;
+    background-color: $color;
+    }
+};
+
+@mixin size($width,$height){
+    width:$width ;
+    height:$height;
+};

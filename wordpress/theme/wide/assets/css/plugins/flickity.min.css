@@ -1,0 +1,179 @@
+/*! Flickity v1.2.1
+http://flickity.metafizzy.co
+---------------------------------------------- */
+/* line 5, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-enabled {
+  position: relative;
+}
+
+/* line 9, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-enabled:focus {
+  outline: none;
+}
+
+/* line 11, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+/* line 17, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+/* line 25, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 34, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+/* line 40, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- previous/next buttons ---- */
+/* line 47, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-prev-next-button {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  background: rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+  /* vertically center */
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 63, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-prev-next-button:hover {
+  background: white;
+}
+
+/* line 65, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #09F;
+}
+
+/* line 70, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-prev-next-button:active {
+  filter: alpha(opacity=60);
+  /* IE8 */
+  opacity: 0.6;
+}
+
+/* line 75, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-prev-next-button.previous {
+  left: 10px;
+}
+
+/* line 76, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-prev-next-button.next {
+  right: 10px;
+}
+
+/* right to left */
+/* line 78, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+
+/* line 82, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+/* line 87, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-prev-next-button:disabled {
+  filter: alpha(opacity=30);
+  /* IE8 */
+  opacity: 0.3;
+  cursor: auto;
+}
+
+/* line 93, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-prev-next-button svg {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* line 101, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-prev-next-button .arrow {
+  fill: #333;
+}
+
+/* color & size if no SVG - IE8 and Android 2.3 */
+/* line 106, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-prev-next-button.no-svg {
+  color: #333;
+  font-size: 26px;
+}
+
+/* ---- page dots ---- */
+/* line 113, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+/* line 124, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-rtl .flickity-page-dots {
+  direction: rtl;
+}
+
+/* line 126, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  filter: alpha(opacity=25);
+  /* IE8 */
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+/* line 138, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/flickity.min.scss */
+.flickity-page-dots .dot.is-selected {
+  filter: alpha(opacity=100);
+  /* IE8 */
+  opacity: 1;
+}
+
+/*# sourceMappingURL=../../css/plugins/flickity.min.map */

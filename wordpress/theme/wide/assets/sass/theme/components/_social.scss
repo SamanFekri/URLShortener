@@ -1,0 +1,64 @@
+//Style share box
+.share-links{
+    text-align: center;
+    .count-share {
+        border-right: 1px solid #ccc;
+        font-size: 20px;
+        padding: 5px 20px;
+        vertical-align: middle;
+        color: #252525;
+        font-weight: 500;
+        b{
+            font-size: 20px;
+        }
+    }
+    .social-icons{
+        margin: 0;
+        display: inline-block;
+        padding: 5px 0;
+        li {
+            line-height:initial;
+        }
+    }
+    .social-item{
+
+        &:hover a {
+          color: #fff;
+        }
+        padding: 3px 7px ;
+        cursor: pointer;
+        margin-left: 10px;
+        @include transition(0.2s);
+        >a {
+            display: inline-block;
+            color: #5EBDC7;
+            text-align: center;
+            font-size: 12px;
+        }
+        &.facebook,&.twitter,&.google,&.linkedin,&.pinterest{
+            background:#fff ;
+            border: 1px solid #5EBDC7;
+            -webkit-transition: 0.2s;
+            width: 30px;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+            &:hover{
+                background:darken(#5EBDC7, 15%);
+            }
+        }
+    }
+
+    .author-social{
+        border-radius: 100%;
+        @include size(24px,24px);
+        text-align: center;
+        line-height: 20px;
+        margin-right: 3px;
+        .fa{
+            font-size: 14px;
+            padding-right: 10px;
+        }
+    }
+}
+
+

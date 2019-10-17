@@ -1,0 +1,195 @@
+//Style Footer
+.scrollup {
+    background: $theme-color;
+    bottom: 30px;
+    display: none;
+    position: fixed;
+    @include rtl-right(30px);
+    @include size(40px,40px);
+    text-align: center;
+    font-size: 24px;
+    color: #fff!important;
+    text-transform: uppercase;
+    padding: 2px;
+    z-index: 999;
+    border-radius:3px;
+    cursor: pointer;
+    .fa {
+        display: block;
+        line-height: 34px;
+    }
+}
+.about {
+    .wide-social-icon {
+        a {
+            width: 35px;
+            height: 35px;
+            position: relative;
+            &:hover {
+                background: $theme-color;
+                i {
+                    color: #fff;
+                }
+            }
+            i {
+                color: $theme-color;
+            }
+        }
+    }
+}
+.na-footer {
+    position: relative;
+    right: 0;
+    float: left;
+    clear: both;
+    width: 100%;
+    font-weight: 400;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+    background:#fff;
+    color:#282828 ;
+    background-position: center center;
+    background-size: cover;
+    .footer-center {
+        padding: 50px 0;
+        color: #282828;
+        position: relative;
+        background: #fff;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #EEe;
+        background: #fff;
+        padding: 30px 0;
+        .coppy-right {
+            text-align: center;
+            a {
+                color: $theme-color;
+            }
+        }
+    }
+    ul{
+        padding: 0;
+        list-style: none;
+
+        li{
+            color:#282828 ;
+            line-height: 24px;
+            b{
+                font-weight: 500;
+                color: #282828 ;
+            }
+            a{
+                font-size: 14px;
+                color:#282828;
+                &:hover{
+                    color:$coppy-right-color-link;
+                }
+            }
+        }
+    }
+    select{
+        color: #f5f5f5;
+        width: 100%;
+    }
+    .widgettitle{
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+        display: block;
+        text-align: left;
+        font-weight: 500;
+        margin: 0 0 20px;
+        padding:12px 0;
+        color:#282828;
+        text-transform: capitalize;
+        &:after{
+            content:none;
+        }
+    }
+    img {
+        height: auto;
+    }
+    b, strong,.wp-caption .wp-caption-text, .entry-caption, .gallery-caption{
+        color: $white;
+    }
+    .newsletters{
+        text-align: left;
+        color:$footer-color ;
+        .group-input-newsletter{
+            max-width: 100%;
+        }
+        .input,.form-control{
+            height: 40px !important;
+            border-radius: 3px 0 0 3px;
+            &:focus,&:active{
+                border-color: #ebebeb;
+            }
+        }
+    }
+}
+
+//footer-2
+.footer-2 {
+
+    .about {
+        .wide-social-icon {
+            &>a {
+                border: none;
+                background: none;
+                width: initial;
+                height: initial;
+                margin-right: 35px;
+                &:last-child {
+                    margin: 0;
+                }
+                &:hover {
+                    i {
+                        color: $theme-color;
+                    }
+                }
+            }
+            .fa {
+                color: #fff;
+                position: relative;
+                transform: initial;
+                left: initial;
+            }
+        }
+    }
+    text-align: center;
+    .widget.about {
+        max-width: 45%;
+        display: inline-block;
+        padding: 0;
+    }
+    .widgettitle {
+        text-align: center;
+        padding: 0;
+        font-size: 26px;
+        line-height: 45px;
+        letter-spacing: 1px;
+        display: inline-block;
+        margin: 0;
+        color: #fff;
+        border: none;
+    }
+    .about-description {
+        span {
+            font-size: 14px;
+            line-height: 30px;
+            color: #fff;
+        }
+    }
+    .footer-center {
+        background: #232121;
+    }
+    .footer-bottom {
+        border: none;
+        background: #1F1B1D;
+        .coppy-right {
+            color: #fff;
+            span {
+                color: #fff;
+            }
+        }
+    }
+}

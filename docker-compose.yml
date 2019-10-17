@@ -56,6 +56,7 @@ services:
       - urlshortener
     volumes:
       - ./wordpress/upload.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./wordpress/themes:/var/www/html/wp-content/themes
 
 
 networks:

@@ -1,0 +1,958 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-01-04 17:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: 404.php:18
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:22
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: author-bio.php:13
+msgid "Published by"
+msgstr ""
+
+#: author-bio.php:29
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: comments.php:15
+msgid "1 Comment"
+msgstr ""
+
+#: comments.php:15
+msgid "% Comment"
+msgstr ""
+
+#: comments.php:27
+msgid "&larr; Older Comments"
+msgstr ""
+
+#: comments.php:28
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: comments.php:33
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:41
+msgid "Leave a Comment"
+msgstr ""
+
+#: comments.php:43
+msgid "Comment*"
+msgstr ""
+
+#: comments.php:49
+msgid "Name*"
+msgstr ""
+
+#: comments.php:52
+msgid "Email*"
+msgstr ""
+
+#: comments.php:57
+msgid "Website"
+msgstr ""
+
+#: comments.php:61
+msgid "Your email address will not be published."
+msgstr ""
+
+#: content-inner.php:105 templates/layout/content-grid.php:75
+#: templates/layout/content-list.php:61
+#: templates/layout/content-tran-one.php:57
+#: templates/layout/content-tran.php:56
+#: templates/layout/content-vertical.php:55
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr ""
+
+#: content-inner.php:122 content-link.php:39 content-page.php:14
+#: content-single.php:115 image.php:58 templates/layout/content-grid.php:93
+#: templates/layout/content-list.php:79
+msgid "Pages:"
+msgstr ""
+
+#: content-inner.php:126 content-link.php:43 content-page.php:18
+#: content-single.php:119 image.php:62 search.php:41
+#: templates/layout/content-grid.php:97 templates/layout/content-list.php:83
+msgid "Page"
+msgstr ""
+
+#. %s: Name of current post
+#: content-link.php:34 templates/template-tags.php:204
+#, php-format
+msgid "Continue reading %s"
+msgstr ""
+
+#: content-link.php:59 content-search.php:27 content-search.php:32 image.php:70
+#: templates/list_comments.php:22
+msgid "Edit"
+msgstr ""
+
+#: content-none.php:18
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:29
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:34
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-single.php:83 templates/template-tags.php:51
+#: inc/widgets/tabs-post.php:79 inc/widgets/tabs-post.php:129
+#: inc/widgets/tabs-post.php:198 inc/widgets/tabs-post.php:248
+msgid "by"
+msgstr ""
+
+#: image.php:29
+msgid "Previous Image"
+msgstr ""
+
+#: image.php:32
+msgid "Next Image"
+msgstr ""
+
+#: image.php:83
+msgctxt "Parent post link"
+msgid ""
+"<span class=\"meta-nav\">Published in</span><span class=\"post-title\">"
+"%title</span>"
+msgstr ""
+
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:39
+msgid "Previous page"
+msgstr ""
+
+#: search.php:40
+msgid "Next page"
+msgstr ""
+
+#: searchform.php:4
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:5
+msgid "Search ... "
+msgstr ""
+
+#: templates/list_comments.php:19
+msgid " ago"
+msgstr ""
+
+#: templates/list_comments.php:23
+msgid "Reply"
+msgstr ""
+
+#: templates/list_comments.php:32
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: templates/post_pagination.php:12
+msgid "Prev"
+msgstr ""
+
+#: templates/post_pagination.php:19
+msgid "Next"
+msgstr ""
+
+#: templates/related_posts.php:26
+msgid "You may also like"
+msgstr ""
+
+#: templates/share.php:13
+msgid "facebook"
+msgstr ""
+
+#: templates/share.php:20
+msgid "twitter"
+msgstr ""
+
+#: templates/share.php:27
+msgid "google +"
+msgstr ""
+
+#: templates/share.php:34 templates/share.php:41
+msgid "pinterest"
+msgstr ""
+
+#: templates/tag.php:5
+msgid "Tags: "
+msgstr ""
+
+#: templates/template-tags.php:17
+msgid "Comment navigation"
+msgstr ""
+
+#: templates/template-tags.php:20
+msgid "Older Comments"
+msgstr ""
+
+#: templates/template-tags.php:24
+msgid "Newer Comments"
+msgstr ""
+
+#: templates/template-tags.php:47 inc/theme-function/theme-function.php:494
+msgid "Featured"
+msgstr ""
+
+#: templates/template-tags.php:52
+msgctxt "Used before post author name."
+msgid "Author"
+msgstr ""
+
+#: templates/template-tags.php:65
+msgctxt "Used before full size attachment link."
+msgid "Full size"
+msgstr ""
+
+#: templates/topbar-vertical.php:40 templates/topbar-vertical.php:44
+msgid "Welcome "
+msgstr ""
+
+#: templates/topbar-vertical.php:41
+msgid "Guest"
+msgstr ""
+
+#: inc/theme-function/setup.php:64
+msgctxt "Poppins font: on or off"
+msgid "on"
+msgstr ""
+
+#: inc/theme-function/setup.php:140
+msgid "Nano Core Plugin"
+msgstr ""
+
+#: inc/theme-function/setup.php:151
+msgid "Contact Form 7"
+msgstr ""
+
+#: inc/theme-function/setup.php:157
+msgid "MailChimp for WordPress "
+msgstr ""
+
+#: inc/theme-function/setup.php:163
+msgid "Max Mega Menu"
+msgstr ""
+
+#: inc/theme-function/setup.php:169
+msgid "WPBakery Visual Compose"
+msgstr ""
+
+#: inc/theme-function/setup.php:177
+msgid "Instagram Feed"
+msgstr ""
+
+#: inc/theme-function/setup.php:201
+msgid "Primary Navigation"
+msgstr ""
+
+#: inc/theme-function/setup.php:202
+msgid "Topbar Navigation"
+msgstr ""
+
+#: inc/theme-function/setup.php:209
+msgid "Blogs"
+msgstr ""
+
+#: inc/theme-function/setup.php:211
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: inc/theme-function/theme-function.php:180
+#: inc/theme-function/theme-function.php:184
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: inc/theme-function/theme-function.php:255
+#: inc/theme-function/theme-function.php:262
+msgid "English"
+msgstr ""
+
+#: inc/theme-function/theme-function.php:267
+msgid "Arabic"
+msgstr ""
+
+#: inc/theme-function/theme-function.php:388
+#: inc/theme-function/theme-function.php:395
+msgid "Home"
+msgstr ""
+
+#: inc/theme-function/theme-function.php:390
+msgid "Search results for"
+msgstr ""
+
+#: inc/theme-function/theme-function.php:413
+msgid "Archive by date"
+msgstr ""
+
+#: inc/theme-function/theme-function.php:416
+msgid "Archive by month "
+msgstr ""
+
+#: inc/theme-function/theme-function.php:418
+msgid "Archive by year "
+msgstr ""
+
+#: inc/theme-function/theme-function.php:458
+msgid "Search results for "
+msgstr ""
+
+#: inc/theme-function/theme-function.php:460
+msgid "Archive by tag "
+msgstr ""
+
+#: inc/theme-function/theme-function.php:464
+msgid "Articles posted by "
+msgstr ""
+
+#: inc/theme-function/theme-function.php:466
+msgid "You got it "
+msgstr ""
+
+#: inc/theme-function/theme-function.php:466
+msgid "Error 404 not Found"
+msgstr ""
+
+#: inc/theme-function/theme-function.php:504
+msgid "Toggle featured"
+msgstr ""
+
+#: inc/theme-function/theme-function.php:506
+msgid "Yes"
+msgstr ""
+
+#: inc/theme-function/theme-function.php:508
+msgid "No"
+msgstr ""
+
+#: inc/theme-function/theme-function.php:556
+msgid "Views"
+msgstr ""
+
+#: inc/theme-function/woocomerce.php:49
+#, php-format
+msgid " <span class=\"mini-cart-items\">%d</span> "
+msgid_plural "<span class=\"mini-cart-items\">%d</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/theme-function/woocomerce.php:52
+msgid "My Cart"
+msgstr ""
+
+#: inc/theme-function/woocomerce.php:54
+msgid " <span class=\"mini-cart-items\"></span> "
+msgid_plural ""
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/theme-function/woocomerce.php:80
+msgid "Filter"
+msgstr ""
+
+#: inc/theme-function/woocomerce.php:222
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr ""
+
+#: inc/theme-function/woocomerce.php:320
+msgid "Product added to wishlist."
+msgstr ""
+
+#: inc/theme-function/woocomerce.php:589
+msgid "On Sale"
+msgstr ""
+
+#: inc/widgets/about.php:78
+msgid "Easy add About."
+msgstr ""
+
+#: inc/widgets/about.php:81
+msgid "+NA: About"
+msgstr ""
+
+#: inc/widgets/about.php:130 inc/widgets/contact-info.php:91
+#: inc/widgets/fb-page.php:56 inc/widgets/recent-post.php:112
+#: inc/widgets/search.php:40
+msgid "Title:"
+msgstr ""
+
+#: inc/widgets/about.php:134 inc/widgets/information.php:80
+msgid "Image:"
+msgstr ""
+
+#: inc/widgets/about.php:142 inc/widgets/contact-info.php:117
+msgid "About me text::"
+msgstr ""
+
+#: inc/widgets/contact-info.php:10
+msgid "+NA: Contact info"
+msgstr ""
+
+#: inc/widgets/contact-info.php:11
+msgid "Display Contact info"
+msgstr ""
+
+#: inc/widgets/contact-info.php:95
+msgid "Address:"
+msgstr ""
+
+#: inc/widgets/contact-info.php:99
+msgid "Phone:"
+msgstr ""
+
+#: inc/widgets/contact-info.php:103
+msgid "Mobile:"
+msgstr ""
+
+#: inc/widgets/contact-info.php:107
+msgid "Skype:"
+msgstr ""
+
+#: inc/widgets/contact-info.php:111
+msgid "Email:"
+msgstr ""
+
+#: inc/widgets/fb-page.php:16
+msgid "+NA: Facebook Page"
+msgstr ""
+
+#: inc/widgets/fb-page.php:17
+msgid "Facebook Page"
+msgstr ""
+
+#: inc/widgets/fb-page.php:60
+msgid "Link address your facebook:"
+msgstr ""
+
+#: inc/widgets/information.php:22
+msgid "Easy add image for sidebar."
+msgstr ""
+
+#: inc/widgets/information.php:28
+msgid "+NA: Image"
+msgstr ""
+
+#: inc/widgets/information.php:87
+msgid "Url:"
+msgstr ""
+
+#: inc/widgets/recent-post.php:19
+msgid ""
+"A widget that displays your latest posts from all categories or a certain"
+msgstr ""
+
+#: inc/widgets/recent-post.php:25
+msgid "+NA: Latest Posts"
+msgstr ""
+
+#: inc/widgets/recent-post.php:107
+msgid "Latest Posts"
+msgstr ""
+
+#: inc/widgets/recent-post.php:130
+msgid "Number of posts to show:"
+msgstr ""
+
+#: inc/widgets/search.php:15
+msgid "A search form for your site."
+msgstr ""
+
+#: inc/widgets/search.php:16
+msgid "+NA: Search"
+msgstr ""
+
+#: inc/widgets/service.php:10
+msgid "+NA: Services"
+msgstr ""
+
+#: inc/widgets/service.php:11
+msgid "Display Services info"
+msgstr ""
+
+#: inc/widgets/service.php:54
+msgid "Icon service:"
+msgstr ""
+
+#: inc/widgets/service.php:56 inc/widgets/support.php:54
+msgid "Select icon from"
+msgstr ""
+
+#: inc/widgets/service.php:59
+msgid "link service:"
+msgstr ""
+
+#: inc/widgets/service.php:63
+msgid "Title service:"
+msgstr ""
+
+#: inc/widgets/service.php:69
+msgid "Description service:"
+msgstr ""
+
+#: inc/widgets/social.php:76
+msgid "Displays your social profile."
+msgstr ""
+
+#: inc/widgets/social.php:78
+msgid "+NA: Social"
+msgstr ""
+
+#: inc/widgets/support.php:10
+msgid "+NA: Support"
+msgstr ""
+
+#: inc/widgets/support.php:11
+msgid "Display Support info"
+msgstr ""
+
+#: inc/widgets/support.php:52
+msgid "Icon:"
+msgstr ""
+
+#: inc/widgets/support.php:57
+msgid "Text support:"
+msgstr ""
+
+#: inc/widgets/support.php:63
+msgid "Description:"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:14
+msgid "+NA: Tabs Post"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:15
+msgid "Tabs Post"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:36
+msgid "Most Views"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:41
+msgid "Recent"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:46
+#: inc/customize/includes/customize-controller.php:467
+msgid "Comments"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:91 inc/widgets/tabs-post.php:141
+#: inc/widgets/tabs-post.php:210 inc/widgets/tabs-post.php:260
+msgid " Comments"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:304
+msgid "says"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:333
+msgid "Number of Most Views posts:"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:337
+msgid "Number of recent posts:"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:341
+msgid "Number of comments:"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:346
+msgid "Show Most Views posts"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:350
+msgid "Show recent posts"
+msgstr ""
+
+#: inc/widgets/tabs-post.php:354
+msgid "Show comments"
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:17
+msgid "Show recent posts."
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:21
+msgid "+NA: Recent Posts"
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:104
+msgid "Recent Posts"
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:108
+msgid "Title"
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:116
+msgid "Number of posts to show"
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:124
+msgid "View Type"
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:128
+msgid "Small"
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:130
+msgid "Large"
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:136
+msgid "Number of items per slide"
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:144
+msgid "Category IDs"
+msgstr ""
+
+#: inc/widgets/widget-recent-post.php:155
+msgid "Show Post Image"
+msgstr ""
+
+#: templates/layout/content-tran-one.php:74
+#: templates/layout/content-tran.php:73
+#: templates/layout/content-vertical.php:72
+msgid "Read more"
+msgstr ""
+
+#: vc_templates/vc_map/vc_pagebuilder.php:9
+#: vc_templates/vc_map/vc_pagebuilder.php:12
+msgid "Name Buttom"
+msgstr ""
+
+#: vc_templates/vc_map/vc_pagebuilder.php:22
+msgid "Image effect "
+msgstr ""
+
+#: vc_templates/vc_map/vc_pagebuilder.php:32
+msgid "Parallax"
+msgstr ""
+
+#: vc_templates/vc_map/vc_pagebuilder.php:35
+msgid "None"
+msgstr ""
+
+#: vc_templates/vc_map/vc_pagebuilder.php:36
+msgid "Simple"
+msgstr ""
+
+#: vc_templates/vc_map/vc_pagebuilder.php:37
+msgid "Image"
+msgstr ""
+
+#: vc_templates/vc_map/vc_pagebuilder.php:38
+msgid "With fade"
+msgstr ""
+
+#: vc_templates/vc_map/vc_pagebuilder.php:40
+msgid ""
+"Add parallax type background for row (Note: If no image is specified, "
+"parallax will use background image from Design Options)."
+msgstr ""
+
+#: inc/customize/classes/customize-category.php:25
+msgid "&mdash; Select &mdash;"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:39
+msgid "Style Setting"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:40
+msgid "Style Setting >"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:44
+msgid "Sidebar"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:45
+msgid "Sidebar Setting"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:49
+msgid "Option"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:57
+msgid "Site Identity"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:62
+msgid "Logo"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:63
+msgid "Upload Logo Image"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:70
+msgid "General"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:76
+msgid "Background - Body"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:85
+msgid "Primary - Color"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:97
+#: inc/customize/includes/customize-controller.php:104
+msgid "Header"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:110
+msgid "Header Layout"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:128
+msgid "Menu Keep"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:136
+msgid "Background - Header"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:146
+msgid "Color - Text"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:158
+msgid "Top bar"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:164
+msgid "Enable Topbar"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:172
+msgid "Background - Top bar"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:181
+msgid "Color - Text "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:194
+msgid "Footer"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:200
+msgid "Choose Footer Style"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:204
+msgid "Footer 1"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:205
+msgid "Footer 2"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:206
+msgid "Hidden Footer"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:216
+msgid "Enable Footer"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:225
+msgid "Enable Copyright"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:234
+msgid "Footer Copyright Text"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:244
+msgid "Blogs Categories"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:251
+#: inc/customize/includes/customize-controller.php:376
+msgid "Sidebar Layout"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:264
+#: inc/customize/includes/customize-controller.php:390
+#: inc/customize/includes/customize-controller.php:488
+msgid "Info"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:265
+#: inc/customize/includes/customize-controller.php:391
+msgid ""
+"Please goto Appearance > Widgets > drop drag widget to the sidebar Article."
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:271
+msgid "Post Layout"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:287
+msgid "Number post on a row"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:302
+msgid "Post content"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:307
+msgid "First post have is lager"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:315
+msgid "Content "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:323
+msgid "Number of words in the description content"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:338
+msgid "Post meta"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:343
+msgid "Comment "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:351
+msgid "View "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:359
+msgid "Like "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:370
+msgid "Blog Single"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:397
+msgid " Post Excerpt"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:402
+msgid " excerpt "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:411
+msgid "Share"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:416
+msgid "Count Share  "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:424
+msgid "Share Facebook  "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:432
+msgid "Share Twitter  "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:440
+msgid "Share Google  "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:449
+msgid "Share Linkedin  "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:458
+msgid "Share Pinterest  "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:472
+msgid "Enable Facebook Comments "
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:480
+msgid "Your app id :"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:489
+msgid ""
+"If you want show notification on  your facebook , please input app id ..."
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:497
+msgid "Font"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:502
+msgid "Use Google Font"
+msgstr ""
+
+#: inc/customize/includes/customize-controller.php:512
+msgid "Font size "
+msgstr ""
+
+#. Name of the theme
+msgid "Wide"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+msgstr ""
+
+#. URI of the theme
+msgid "http://wide.nanoagency.co"
+msgstr ""
+
+#. Author of the theme
+msgid "Nano Agency"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://www.nanoagency.co/"
+msgstr ""

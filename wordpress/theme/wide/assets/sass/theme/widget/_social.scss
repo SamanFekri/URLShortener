@@ -1,0 +1,107 @@
+[class*="ion-social-"]{
+    @include size(30px,30px);
+    background:$white;
+    color:#5EBDC7;
+    border: 1px solid #5EBDC7;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 30px;
+    margin-right: 10px;
+    text-align: center;
+    @include transition(0.3s);
+    border-radius: 100%;
+    &:hover{
+        color:$white;
+        @include transition(0.3s);
+        background: #5EBDC7;
+    }
+}
+
+.wide_social{
+    .ion-social-facebook{
+        &:hover{
+            color: #3b5998;
+            border: 2px solid #3b5998;
+        }
+    }
+
+    .ion-social-googleplus{
+        &:hover{
+            color: #dd4b39;
+            border: 2px solid #dd4b39;
+        }
+    }
+
+    .ion-social-twitter{
+        &:hover{
+            color: #00aced;
+            border: 2px solid #00aced;
+        }
+    }
+
+    .ion-social-instagram{
+        &:hover{
+            color: #517fa4;
+            border: 2px solid #517fa4;
+        }
+    }
+
+    .ion-social-pinterest{
+        &:hover{
+            color: #cb2027;
+            border: 2px solid #cb2027;
+        }
+    }
+
+    .ion-social-skype{
+        &:hover{
+            color: #0078ca;
+            border: 2px solid #0078ca;
+        }
+    }
+
+    .ion-social-vimeo{
+        &:hover{
+            color: #aad450;
+            border: 2px solid #aad450;
+        }
+    }
+    .ion-social-youtube{
+        &:hover{
+            color: #bb0000;
+            border: 2px solid #bb0000;
+        }
+    }
+
+    .ion-social-dribbble{
+        &:hover{
+            color: #ea4c89;
+            border: 2px solid #ea4c89;
+        }
+    }
+
+    .ion-social-linkedin{
+        &:hover{
+            color: #007bb6;
+            border: 2px solid #007bb6;
+        }
+    }
+
+    .ion-social-rss{
+        &:hover{
+            color: #FF9900;
+            border: 2px solid #FF9900;
+        }
+    }
+}
+.wide-social-icon {
+  a {
+    position: relative;
+    i{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+}

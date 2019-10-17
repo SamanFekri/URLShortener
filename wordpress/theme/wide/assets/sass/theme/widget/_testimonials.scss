@@ -1,0 +1,100 @@
+//style widget Testimonials
+
+.widget-testimonial{
+    text-align: center;
+    .widgettitle{
+        padding-top: 70px;
+    }
+    .testimonial_item{
+        width: 100%;
+        position: relative;
+        display: block;
+    }
+    blockquote{
+        font-size: 16px;
+        font-style: normal;
+        @include rtl-padding-left(30px);
+    }
+    .author{
+        margin-top: 30px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #040203;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(0.4s);
+    }
+    .testimonial_position{
+        font-size: 10px;
+        opacity: 0;
+        color: #929292;
+        font-weight: 500;
+        visibility: hidden;
+        @include transition(0.4s);
+    }
+    .group-author-position{
+        text-align: center;
+        display: block;
+        position: relative;
+    }
+    .img-author{
+        width: 100%;
+        height: auto;
+        display: inline-block;
+
+        >img{
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+        }
+    }
+
+    .testimonial_author{
+        opacity: 0.5;
+        padding:20px;
+        @include transition(0.4s);
+    }
+    .is-selected{
+        opacity: 1;
+        padding: 0px;
+        @include transition(0.4s);
+
+        .author{
+            opacity: 1;
+            visibility: visible;
+            font-size: 18px;
+            @include transition(0.4s);
+        }
+
+        .testimonial_position{
+            font-size: 13px;
+            opacity: 1;
+            visibility: visible;
+            @include transition(0.4s);
+        }
+    }
+
+    .carousel-main{
+        text-align: center;
+        padding: 10px 10% 40px;
+        overflow: hidden;
+    }
+    .carousel-nav{
+        position: relative;
+        display: block;
+        padding:0 23%;
+        height: 260px;
+        .testimonial_author{
+            width: 33.3%;
+        }
+    }
+
+
+    .des-testimonial{
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+ }
+

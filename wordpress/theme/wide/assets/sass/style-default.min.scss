@@ -1,0 +1,61 @@
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+
+
+@import "variables-theme";
+@import "variables";
+@import "theme/mixins/rtl";
+@import "bootstrap/mixins";
+@import "theme/mixins/mixins";
+@import "theme/mixins/affect";
+@import "theme/common/add-class";
+@import "theme/common/global";
+@import "theme/common/font";
+@import "theme/mixins/buttons";
+@import "theme/components/buttons";
+@import "theme/components/forms";
+@import "theme/components/collapsed";
+@import "theme/components/carousel";
+@import "theme/components/search";
+@import "theme/components/menu";
+@import "theme/components/offcanvas";
+@import "theme/components/element-woo";
+@import "theme/components/social";
+
+@import "theme/layouts/header";
+@import "theme/layouts/sidebar";
+@import "theme/layouts/footer";
+@import "theme/layouts/pages";
+@import "theme/layouts/home";
+@import "theme/layouts/widget";
+
+//@import "theme/products/product";
+//@import "theme/products/category";
+//@import "theme/products/detail";
+
+//@import "theme/widget/introduce";
+//@import "theme/widget/attributes";
+
+//@import "theme/widget/services-icon";
+//@import "theme/widget/testimonials";
+//@import "theme/widget/banner-slider";
+//@import "theme/widget/deal";
+//@import "theme/widget/filterSale";
+@import "theme/widget/newsletter";
+@import "theme/widget/social";
+//@import "theme/widget/slide";
+//@import "theme/widget/na-recent-post";
+@import "theme/widget/banner";
+//@import "theme/widget/tabsproduct";
+//@import "theme/widget/categorybanner";
+//@import "theme/widget/product";
+@import "theme/widget/tabs-post";
+
+
+@import "theme/blog/category";
+@import "theme/blog/single";
+
+@import "theme/folio/category";
+@import "theme/folio/single";
+
+@import "responsive";
+

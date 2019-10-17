@@ -1,0 +1,20 @@
+//style widget Product
+.widget-product{
+    .group-title{
+        .widgettitle{
+            float: left;
+            margin-bottom: 0;
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 500;
+        }
+        .link-cat{
+            float: right;
+            padding-top: 5px;
+            color: #757575;
+            &:hover{
+                color: $theme-color;
+            }
+        }
+    }
+}

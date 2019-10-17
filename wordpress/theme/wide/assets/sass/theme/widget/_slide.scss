@@ -1,0 +1,95 @@
+/**
+	 * Price filter widget
+	 */
+.widget_price_filter {
+    margin-bottom: 10px !important;
+    .widgettitle{
+        margin-bottom:0px;
+    }
+    .widgettitle + *{
+        padding-top: 10px;
+    }
+    .price_slider {
+        margin: 1em 0 2em;
+    }
+
+    .price_slider_amount {
+        line-height: 2.4;
+        font-size: 0.8751em;
+
+        .button {
+            font-size: 13px;
+            background: transparent;
+            border: 2px solid $theme-color;
+            color: $theme-color;
+            box-shadow: none;
+        }
+    }
+
+    .ui-slider {
+        position: relative;
+        text-align: left;
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+
+    .ui-slider .ui-slider-handle {
+        background-color: white;
+        border-radius: 100%;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+        cursor: ew-resize;
+        height: 20px;
+        margin-left: -0.5em;
+        outline: medium none;
+        position: absolute;
+        top: -9px;
+        width: 20px;
+        z-index: 2;
+    }
+
+    .ui-slider .ui-slider-range {
+        position: absolute;
+        z-index: 1;
+        font-size: .7em;
+        display: block;
+        border: 0;
+        border-radius: 0;
+        background-color: $theme-color;
+    }
+
+    .price_slider_wrapper{
+        .ui-widget-content {
+            border-radius: 3px;
+            background-color: #FFFFFF;
+            border: 0;
+        }
+        .button{
+            border-radius: 3px;
+            padding: 3px 25px 0;
+            font-size: 12px;
+            text-transform: capitalize;
+        }
+        .price_label{
+            font-size: 12px;
+            float: right;
+            padding: 5px 0;
+        }
+    }
+
+    .ui-slider-horizontal {
+        height: 4px;
+    }
+
+    .ui-slider-horizontal .ui-slider-range {
+        top: 0;
+        height: 4px;
+    }
+
+    .ui-slider-horizontal .ui-slider-range-min {
+        left: -1px;
+    }
+
+    .ui-slider-horizontal .ui-slider-range-max {
+        right: -1px;
+    }
+}

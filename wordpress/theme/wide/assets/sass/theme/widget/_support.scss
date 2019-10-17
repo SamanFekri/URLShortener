@@ -1,0 +1,36 @@
+//style widget Support
+.support{
+    display: block;
+    margin-top: 30px;
+}
+.icon-support{
+    @include rtl-float-left;
+    border-radius: 100%;
+    display: block;
+    text-align: center;
+    @include rtl-margin-right(15px);
+    margin-bottom: 10px;
+    padding: 0;
+    .fa{
+        font-size: 24px;
+        line-height: 30px;
+        color: $theme-color;
+    }
+}
+.support-description{
+    @include rtl-float-left;
+    width: 70%;
+    >*{
+        display: inline-block;
+        color: $font-color;
+    }
+    .text-support{
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-top: 5px;
+        b{
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+    }
+}

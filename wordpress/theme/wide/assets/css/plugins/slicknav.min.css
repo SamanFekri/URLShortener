@@ -1,0 +1,443 @@
+/*!
+ * SlickNav Responsive Mobile Menu v1.0.3
+ * (c) 2015 Josh Cope
+ * licensed under MIT
+ */
+/* line 6, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_btn {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  float: right;
+  padding: 0.438em 0.625em 0.438em 0.625em;
+  line-height: 1.125em;
+  cursor: pointer;
+}
+
+/* line 14, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+  margin-top: 0.188em;
+}
+
+/* line 17, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu {
+  *zoom: 1;
+}
+
+/* line 19, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_menutxt {
+  display: block;
+  line-height: 1.188em;
+  float: left;
+}
+
+/* line 23, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_icon {
+  float: left;
+  margin: 0.188em 0 0 0.438em;
+}
+
+/* line 26, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_no-text {
+  margin: 0;
+}
+
+/* line 28, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_icon-bar {
+  display: block;
+  width: 1.125em;
+  height: 0.125em;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 38, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu:before {
+  content: " ";
+  display: table;
+}
+
+/* line 41, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* line 46, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav {
+  clear: both;
+}
+
+/* line 48, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav ul {
+  display: block;
+}
+
+/* line 50, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav li {
+  display: block;
+}
+
+/* line 52, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_arrow {
+  font-size: 0.8em;
+  margin: 0 0 0 0.4em;
+}
+
+/* line 55, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_item {
+  cursor: pointer;
+}
+
+/* line 57, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_item a {
+  display: inline;
+}
+
+/* line 59, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_row {
+  display: block;
+}
+
+/* line 61, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav a {
+  display: block;
+}
+
+/* line 63, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_parent-link a {
+  display: inline;
+}
+
+/* line 66, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_brand {
+  float: left;
+}
+
+/* line 69, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #4c4c4c;
+}
+
+/* line 75, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu * {
+  box-sizing: border-box;
+}
+
+/* line 77, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_menutxt {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 3px #000;
+}
+
+/* line 81, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #fff;
+  font-size: 22px;
+}
+
+/* line 86, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_btn {
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 94, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+  list-style: none;
+  overflow: hidden;
+}
+
+/* line 101, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav ul {
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+
+/* line 106, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_row {
+  padding: 5px 10px;
+  margin: 2px 5px;
+}
+
+/* line 109, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_row:hover {
+  color: #E6430B;
+}
+
+/* line 112, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav a {
+  padding: 5px 10px;
+  margin: 2px 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* line 117, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav a:hover {
+  color: #E6430B;
+}
+
+/* line 119, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_txtnode {
+  margin-left: 15px;
+}
+
+/* line 121, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_item a {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 124, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_parent-link a {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 128, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_brand {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 7px 12px;
+  height: 44px;
+}
+
+/* ================= Slicknav ==================== */
+/* line 136, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_btn {
+  margin: 0 10px;
+  height: 35px;
+  line-height: 24px;
+  padding: 5px;
+  position: absolute;
+  left: 4px;
+  text-align: center;
+  top: 2px;
+  width: 45px;
+  font-size: 21px;
+  cursor: pointer;
+  color: #fff;
+  z-index: 99999;
+  display: none;
+}
+
+/* line 152, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_menutxt {
+  display: block;
+  float: left;
+  line-height: 1.188em;
+}
+
+/* line 157, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_icon {
+  float: left;
+  margin: 0.188em 0 0 0.438em;
+}
+
+/* line 161, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_no-text {
+  margin: 0;
+}
+
+/* line 164, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_icon-bar {
+  display: block;
+  height: 0.125em;
+  width: 1.125em;
+}
+
+/* line 169, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+  margin-top: 0.188em;
+}
+
+/* line 172, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav {
+  clear: both;
+}
+
+/* line 175, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav ul, .slicknav_nav li {
+  display: block;
+  float: none !important;
+  width: 100%;
+  position: relative;
+}
+
+/* line 181, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav li a.mega-menu-link {
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+  line-height: 44px;
+}
+
+/* line 185, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_arrow {
+  font-size: 12px;
+  margin: 0 0 0 0.4em;
+  position: absolute;
+  right: 20px;
+  top: 18px;
+  line-height: 20px;
+}
+
+/* line 193, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_item {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* line 197, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+#main-navigation.horizontal-menu .slicknav_menu ul.mega-sub-menu {
+  box-shadow: none !important;
+  padding-left: 4% !important;
+}
+
+/* line 201, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .mega-menu-link {
+  margin: 0 10px !important;
+  padding: 5px 0 !important;
+}
+
+/* line 205, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_item {
+  cursor: pointer;
+}
+
+/* line 208, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_row {
+  display: block;
+}
+
+/* line 211, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav a {
+  display: block !important;
+  font-size: 12px !important;
+  font-weight: normal !important;
+  color: #fff !important;
+}
+
+/* line 217, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_item a, .slicknav_nav .slicknav_parent-link a {
+  display: inline;
+}
+
+/* line 220, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu::before, .slicknav_menu::after {
+  content: " ";
+  display: table;
+}
+
+/* line 224, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu::after {
+  clear: both;
+}
+
+/* line 229, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu {
+  font-size: 16px;
+}
+
+/* line 232, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* line 237, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_menutxt {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 3px #000;
+}
+
+/* line 243, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.header-top-black .slicknav_menu .slicknav_icon-bar {
+  background-color: #fff;
+}
+
+/* line 247, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav {
+  background-color: #000;
+  color: #fff;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  z-index: 9999;
+}
+
+/* line 258, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav, .slicknav_nav ul {
+  list-style: outside none none;
+}
+
+/* line 261, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav ul {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+
+/* line 265, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_row {
+  margin: 2px 5px;
+  padding: 5px 10px;
+}
+
+/* line 269, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav a {
+  color: #000;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 2px 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 279, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_item a, .slicknav_nav .slicknav_parent-link a {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 285, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_nav .slicknav_txtnode {
+  margin-left: 15px;
+}
+
+/* line 288, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .slicknav_no-text {
+  margin-top: 7px;
+}
+
+/* line 291, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slicknav.min.scss */
+.slicknav_menu .mega-block-title {
+  color: #ffffff !important;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=../../css/plugins/slicknav.min.map */

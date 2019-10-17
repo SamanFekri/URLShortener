@@ -1,0 +1,170 @@
+//style widget Recent Post
+
+.blog-recent-post{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    .widgettitle
+    {
+        margin-bottom: 20px;
+    }
+    .na-grid {
+        [class*="col-"]{
+            padding: 0;
+            margin: 0;
+            &:nth-child(2n+1){
+                clear: left;
+            }
+        }
+        .post-article{
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+            @include rtl-left(0);
+        }
+        .na-recent-post:hover{
+            .bg_gradients{
+                @include transition(0.4s);
+                background: rgba(0, 0, 0, 0.7);
+                >a{
+                    opacity: 1;
+                    visibility: visible;
+                    @include transition(0.4s);
+                }
+            }
+        }
+        .bg_gradients {
+            @include transition(0.4s);
+            background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%) repeat scroll 0 0;
+            bottom: 0;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+
+            > a {
+                @include transition(0.4s);
+                opacity: 0;
+                visibility: hidden;
+                background: $theme-color;
+                border-radius: 50%;
+                bottom: 0;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+                height: 45px;
+                left: 0;
+                margin: auto;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 45px;
+            }
+            .icon-link{
+                color: #FFF;
+                font-size: 16px;
+                height: 45px;
+                line-height: 50px;
+                padding: 14px;
+                text-align: center;
+                vertical-align: middle;
+                width: 45px;
+            }
+
+        }
+        .entry-header{
+            margin: 0 20px;
+            padding: 0;
+            border-bottom:1px solid rgba(237, 239, 242, 0.5);
+            a{
+                font-weight: 400;
+                color: #FFF;
+                font-size: 14px;
+            }
+        }
+    }
+    .na-list{
+        margin: 0 -15px;
+        .bg_gradients{
+            display: none;
+        }
+        .na-recent-post{
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            background: #FFF;
+            border-radius: 3px;
+        }
+        .entry-title{
+            padding: 0;
+        }
+        .entry-header{
+            padding: 20px;
+        }
+        .entry-bottom{
+            border-top: 1px solid #ececec;
+        }
+        .article-meta,.item-comment{
+            padding: 10px 0;
+            >span{
+                color: #909090;
+            }
+        }
+    }
+
+    .wide-recent-image{
+        width: 100%;
+    }
+    .post-image{
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .entry-title {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 20px;
+        margin:0;
+        padding: 15px 0 10px;
+    }
+
+    .entry-content{
+        margin: 0 20px;
+        color: #e4e4e4;
+        font-size: 13px;
+        line-height: 24px;
+        padding: 15px 0;
+    }
+    .item-comment{
+        width: auto;
+        padding: 15px 0;
+        margin: 0 20px;
+        font-size: 12px;
+        color: #e4e4e4;
+        .icon-comment{
+            font-size: 16px;
+        }
+        >span{
+            line-height: 24px;
+        }
+    }
+    .icon-clock{
+        @include rtl-margin-right(5px);
+    }
+    .article-meta{
+        background: none;
+        font-size: 13px;
+        padding-left:0;
+        padding-right:0;
+        margin: 0 20px;
+        line-height: 24px;
+        border:none;
+        >span {
+            color: #e4e4e4;
+        }
+    }
+    .btn-recent-blog{
+        padding: 15px 0;
+        display: block;
+    }
+}
+
+

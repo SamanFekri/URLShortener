@@ -1,0 +1,65 @@
+//style widget Tabs Product
+
+.product-tabs{
+    padding-top: 50px;
+    .widgettitle{
+        display: block;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 0;
+        .nav-tabs{
+            display: inline-block;
+        }
+        a{
+            color:#888;
+        }
+    }
+    .tabs-title{
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .widget-content{
+        padding-top: 0;
+    }
+    .tabs-title-product{
+        font-size: 16px;
+        padding: 0;
+        font-weight: 400;
+        background: none;
+        display: block;
+        &:focus,
+        &.focus,
+        &:active:focus,
+        &.focus:active,
+        &.active:focus,
+        &.active.focus{
+            background: none;
+            color: $theme-color;
+        }
+    }
+    ul{
+       display: inline-block;
+       position: relative;
+        border: none;
+    }
+    li{
+        padding-right: 30px;
+        a:hover{
+            background: none;
+        }
+    }
+    li.active > a,
+    li.active > a:hover,
+    li.active > a:focus{
+        background: none;
+        color: $theme-color;
+    }
+    .product-block{
+        margin-bottom:30px;
+    }
+}
+.category-product{
+    .widget-content{
+        padding-top: 20px;
+    }
+}

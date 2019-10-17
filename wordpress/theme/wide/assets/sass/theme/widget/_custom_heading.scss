@@ -1,0 +1,41 @@
+//style widget Custom Heading
+
+.wg-custom-heading{
+    text-align: center;
+
+    .widget-content{
+        padding: 60px 0;
+    }
+
+    .text-heading{
+        display: inline;
+        line-height: 50px;
+        font-size: 24px;
+        color: #fff;
+        padding: 0 15px;
+    }
+
+    .buttom-heading{
+        line-height: 50px;
+        display: inline;
+        padding: 0 15px;
+
+        .btn-inverse{
+            border-radius: 60px;
+            letter-spacing: 2px;
+            padding:17px 25px;
+            font-weight: 500;
+            background: transparent;
+            border: 2px solid #fff;
+            @include transition(0.4s);
+            &:hover{
+                color: $theme-color;
+                background:#fff;
+                @include transition(0.4s);
+            }
+        }
+    }
+}
+.na-heading{
+    line-height: 24px;
+}

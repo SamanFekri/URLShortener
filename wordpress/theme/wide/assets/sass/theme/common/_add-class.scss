@@ -1,0 +1,225 @@
+// add class
+
+//no padding
+.no-padding {
+  padding: 0;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.row-nopadding{
+    margin: 0;
+    [class*="col-"]{
+        padding: 0;
+    }
+}
+.has-padding-top{
+    padding-top: 15px;
+}
+.inline{
+    input{
+        height:auto;
+    }
+}
+//padding vc
+body .vc_row{
+    margin: 0 -7.5px;
+}
+body [class*="vc_col-"]{
+    padding: 0 7.5px;
+    &.sidebar {
+        padding-bottom: 35px;
+    }
+}
+body .vc_column_container > .vc_column-inner{
+    padding: 0;
+}
+// fix padding 14px (banner single)
+.has-padding{
+    margin: 0 -7px !important;
+    .wpb_column{
+        padding: 0 7px;
+    }
+    .vc_row{
+        margin-left:-7px ;
+        margin-right: -7px;
+    }
+    .vc_column-inner {
+        padding-left:0 !important;
+        padding-right:0 !important;
+    }
+    .wpb_content_element{
+        margin-bottom:14px;
+    }
+}
+
+.table-inner{
+    @include clearfix();
+    position: relative;
+    display: table;
+    width: 100%;
+    height: auto;
+    >*{
+        display: table-cell;
+        vertical-align: middle;
+        @include rtl-padding-left(15px);
+        &:first-child{
+            @include rtl-padding-left(0px);
+        }
+    }
+}
+.close{
+    font-size: 14px;
+}
+.link{
+    color: $white;
+    &:hover{
+        color: $theme-color;
+    }
+    .fa{
+        margin-left: 7px;
+    }
+}
+
+.box-equal{
+    display: table;
+    width: 100%;
+    >*{
+        width: 50%;
+        float: none !important;
+        display: table-cell;
+        vertical-align: top;
+        vertical-align: middle;
+    }
+    .wpb_content_element{
+        margin-bottom: 0px;
+    }
+
+    .wpb_text_column{
+        bottom: 0;
+        left: 0;
+//        margin-left: 20px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        .wpb_wrapper{
+            bottom: 0;
+            height: 30%;
+            left: 0;
+            margin: auto !important;
+            position: absolute;
+            right: 0;
+            top: 0;
+            vertical-align: middle;
+            width: 70%;
+        }
+    }
+}
+
+// Medium screen / desktop 992-1199 ------------------------------------------------------------------------------------
+@media (min-width: $screen-md) and (max-width: $screen-md-max) {
+    .box-equal{
+        display: block;
+        >.wpb_column{
+            width: 100%;
+            float: left !important;
+            display: block;
+            vertical-align: top;
+            vertical-align: middle;
+        }
+        .wpb_text_column{
+            position: relative;
+            .wpb_wrapper{
+                position: relative;
+            }
+        }
+    }
+}
+// Small screen / tablet 768-991 ---------------------------------------------------------------------------------------
+@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+    .box-equal{
+        display: block;
+        >.wpb_column{
+            width: 100%;
+            float: left !important;
+            display: block;
+            vertical-align: top;
+            vertical-align: middle;
+        }
+        .wpb_text_column{
+            position: relative;
+            .wpb_wrapper{
+                position: relative;
+            }
+        }
+    }
+}
+
+// Small screen / phone 480px-767px-------------------------------------------------------------------------------------
+@media (max-width: $screen-xs-max) {
+    .box-equal{
+        display: block;
+        >*{
+            width: 100%;
+            float: left !important;
+            display: block;
+            vertical-align: top;
+            vertical-align: middle;
+        }
+        .wpb_text_column{
+            position: relative;
+            .wpb_wrapper{
+                position: relative;
+            }
+        }
+    }
+}
+
+.js-vc_parallax-o-image {
+    background-attachment: fixed;
+    background-clip: padding-box;
+    background-position: 0 0;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.icon-plus{
+    position: relative;
+}
+.center{
+    text-align: center;
+}
+.wrap-select{
+    position: relative;
+    &:after{
+        background:transparent;
+        color: $color-title;
+        content: "\f107";
+        font-family: "FontAwesome";
+        height: 100%;
+        line-height: 40px;
+        pointer-events: none;
+        position: absolute;
+        @include rtl-right(5px);
+        text-align: center;
+        top: 0;
+        width: 10px;
+        font-size: 16px;
+
+    }
+    >select{
+        color: $color-title;
+        border: none;
+        line-height: 40px;
+        height: 40px;
+        background:transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+}

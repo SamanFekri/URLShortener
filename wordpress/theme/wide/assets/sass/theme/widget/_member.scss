@@ -1,0 +1,75 @@
+/* ================= Team Member =================== */
+.na-member-wrap{
+    .widgettitle{
+        font-size: 30px;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+        span{
+            border-bottom: none;
+        }
+    }
+    margin-bottom: 30px;
+    ul.na-member-list{
+        padding: 0;
+        margin:0 -15px;
+        > li{
+            padding:0 15px;
+        }
+    }
+
+}
+
+.na-member-list{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+.na-member-list h5{
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 26px 15px 8px;
+}
+.member-position{
+    color: #7d7d7d;
+    font-size: 14px;
+}
+.na-member-item .na-social ul li a{
+    border: 2px solid #ebebeb;
+    border-radius: 50%;
+    color: #7d7d7d;
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    line-height: 37px;
+    margin: 0 2px;
+    padding: 0;
+    text-align: center;
+    width: 40px;
+}
+.na-member-item .na-social{
+    margin-top: 15px;
+    ul{
+        padding: 0;
+    }
+}
+.na-social {
+    text-align: center;
+}
+.na-social ul {
+    list-style: outside none none;
+    margin: 0;
+}
+.na-social ul li {
+    display: inline-block;
+}
+.na-social ul li a {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0 17px;
+    text-transform: uppercase;
+}

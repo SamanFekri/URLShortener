@@ -1,0 +1,86 @@
+//style widget Banner image Customize
+.na-banners{
+    position: relative;
+    .content{
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        text-align: center;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        z-index: 1;
+        padding: 15px 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -4px;
+          bottom: -4px;
+          border: 2px solid #fff;
+          max-width: 100%;
+          border-left: none;
+          border-right:none;
+          z-index: -1;
+          opacity: 0.4;
+        }
+        &.right{
+            left:auto;
+            right:30px;
+        }
+        &.middle-left{
+            top:40%;
+        }
+        &.middle-right{
+            top:40%;
+            left:auto;
+            right:30px;
+            text-align: right;
+        }
+        &.center{
+            left:0;
+            right:0;
+            top:auto;
+            bottom: 30px;
+        }
+    }
+    .bannertitle{
+      color:$theme-color;
+      margin: 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 500;
+    }
+    .subtitle{
+        margin: 0;
+        font-size: 14px;
+        color: #888;
+        line-height: 30px;
+        a{
+            color:#888;
+            &:hover{
+                color: #282828;
+            }
+        }
+    }
+}
+.box-instagram{
+    h2{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    p{
+        text-align: center;
+        color:#888;
+    }
+    margin-bottom: 30px;
+}
+.no-padding{
+    .vc_column-inner{
+        padding: 0 !important;
+    }
+}

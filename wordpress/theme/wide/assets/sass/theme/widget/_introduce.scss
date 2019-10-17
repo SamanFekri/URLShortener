@@ -1,0 +1,45 @@
+//style widget Introduce
+.widget-introduce{
+    vertical-align: middle;
+    .introduce-text{
+        padding: 50px 30px 50px 100px;
+        border-radius: 3px;
+        width: 58.3333%;
+    }
+    .introduce-image{
+        width: 41.6667%;
+        background-position:center center !important;
+        background-repeat:no-repeat !important;
+        background-size:cover !important;
+    }
+    .row-nopadding{
+        background: #FFF;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+    .widget-content{
+        padding: 0;
+    }
+    .sub-title{
+        font-size: 20px;
+        color: #555555;
+        font-weight: 300;
+    }
+    .widgettitle{
+        font-size: 36px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .des-services{
+        padding: 20px 0;
+        line-height: 24px;
+    }
+    .initialize{
+        padding-top: 25px;
+        padding-bottom: 30px;
+        display: block;
+        font-size: 12px;
+    }
+}

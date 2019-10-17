@@ -1,0 +1,446 @@
+// Style Product
+
+/**
+* Star ratings
+*/
+p.stars {
+    position: relative;
+    font-size: 1em;
+    a {
+        display: inline-block;
+        margin-right: 1em;
+        text-indent: -9999px;
+        position: relative;
+        border-bottom: 0 !important;
+        outline: 0;
+
+        &:last-child {
+          border-right: 0;
+        }
+
+        &.star-1,
+        &.star-2,
+        &.star-3,
+        &.star-4,
+        &.star-5 {
+          border-right: 1px solid #ccc;
+
+          &:after {
+              font-family: "fontawesome";
+              text-indent: 0;
+              position: absolute;
+              top: 0;
+              left: 0;
+          }
+
+        }
+
+        &.star-1 {
+          width: 2em;
+
+          &:after {
+            content: "\f006";
+            color: #F4C100;
+          }
+
+          &:hover:after,
+          &.active:after {
+            content: "\f005";
+            color: #F4C100;
+          }
+        }
+
+        &.star-2 {
+          width: 3em;
+
+          &:after {
+            content: "\f006\f006";
+            color: #F4C100;
+          }
+
+          &:hover:after,
+          &.active:after {
+            content: "\f005\f005";
+            color: #F4C100;
+          }
+        }
+
+        &.star-3 {
+          width: 4em;
+
+          &:after {
+            content: "\f006\f006\f006";
+            color: #F4C100;
+          }
+
+          &:hover:after,
+          &.active:after {
+            content: "\f005\f005\f005";
+            color: #F4C100;
+          }
+        }
+
+        &.star-4 {
+          width: 5em;
+
+          &:after {
+            content: "\f006\f006\f006\f006";
+            color: #F4C100;
+          }
+
+          &:hover:after,
+          &.active:after {
+            content: "\f005\f005\f005\f005";
+            color: #F4C100;
+          }
+        }
+
+        &.star-5 {
+          width: 6em;
+          border: 0;
+
+          &:after {
+            content: "\f006\f006\f006\f006\f006";
+            color: #F4C100;
+          }
+
+          &:hover:after,
+          &.active:after {
+            content: "\f005\f005\f005\f005\f005";
+            color: #F4C100;
+          }
+        }
+    }
+}
+
+.rating{
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+}
+.star-rating {
+    overflow: hidden;
+    position: relative;
+    height: 1em;
+    line-height: 1;
+    font-size: 13px;
+    width: 5.6em;
+    font-family: 'fontawesome';
+    &:before {
+        content: "\f006\f006\f006\f006\f006";
+        float: left;
+        top: 0;
+        left: 0;
+        position: absolute;
+        color: #F4C100;
+        letter-spacing: 3px;
+    }
+
+    span {
+        overflow: hidden;
+        float: left;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding-top: 1.5em;
+    }
+
+    span:before {
+      content: "\f005\f005\f005\f005\f005";
+      top: 0;
+      position: absolute;
+      left: 0;
+      color: #F4C100;
+      letter-spacing: 3px;
+    }
+}
+.woocommerce-product-rating {
+    line-height: 2;
+    display: block;
+    margin-bottom: 15px;
+    .star-rating {
+        margin: .8em 5px 0 0;
+        float: left;
+    }
+}
+.products {
+    .star-rating {
+      display: block;
+      margin: 0;
+      float: none;
+    }
+}
+
+/**
+* Product
+*/
+.product-block{
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+/**
+* Product affect hover
+*/
+.product-block{
+    overflow: hidden;
+    //border: 1px solid red;
+    &.border{
+        border: $border-color-base;
+        &:hover{
+            @include transition(0.4s);
+            border: 1px solid $theme-color;
+        }
+    }
+    &:hover{
+       .price{
+           @include transition(0.4s);
+           opacity: 0;
+           visibility: hidden;
+       }
+       .button-groups{
+           @include transition(0.4s);
+           opacity: 1;
+           visibility: visible;
+       }
+    }
+}
+.hreview-aggregate {
+    .star-rating {
+        margin: 10px 0 0 0;
+    }
+}
+
+/**
+* Image product responsive
+*/
+
+.product-thumbnail{
+    text-align: center;
+}
+.product-image{
+    display: block;
+    position: relative;
+    .inner{
+        position: relative;
+        overflow: hidden;
+        display: block;
+        text-align: center;
+        .wp-post-image,.hover-image{
+            display: inline-block;
+        }
+    }
+    .wp-post-image,.hover-image {
+        width: 100%;
+    }
+}
+.wp-post-image{
+    display: inline-block;
+    height: auto;
+}
+
+/**
+* Caption product image
+*/
+.caption-image{
+    position: relative;
+}
+
+/**
+* Caption product
+*/
+.caption{
+    border-top: 1px solid #ebebeb;
+    text-align: left;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 2;
+    min-height: 85px;
+}
+/**
+* Name product
+*/
+.name{
+  padding:15px 15px 10px;
+  margin:0;
+  text-align: left;
+  line-height: 20px;
+  display: inline-block;
+  a{
+      @include transition(0s);
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      color:$color-title;
+      &:hover{
+          color: $theme-color;
+      }
+  }
+}
+/**
+* Price product
+*/
+.price-review{
+  padding:0 15px 10px;
+}
+.price{
+    @include transition(0.4s);
+    visibility: visible;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color:$theme-color;
+    line-height: 24px;
+    padding: 5px 0;
+    ins{
+        text-decoration:none;
+        color: $theme-color;
+    }
+    del{
+        font-size: 13px;
+        font-weight: 400;
+        color:#929292;
+    }
+}
+/**
+* Review product
+*/
+.product-review,.woocommerce-review-link{
+    color: $black;
+    padding:0 5px;
+    @include rtl-border-left($border-color-base);
+}
+
+/**
+* Add review product
+*/
+.product-add-review,.woocommerce-write-review-link{
+    padding:0 5px;
+    color: $black;
+    a{
+        color: $black;
+    }
+}
+/**
+* Button sale
+*/
+.onsale{
+      @include size(50px,50px);
+      background: $theme-color;
+      position: absolute;
+      color: #ffffff;
+      z-index: 1 !important;
+      font-size: 13px;
+      text-transform: uppercase;
+      top:10px;
+      @include rtl-right(10px);
+      text-align: center;
+      line-height: 50px;
+      padding: 0 10px;
+      border-radius: 50%;
+      box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.3);
+}
+/**
+* Button hot
+*/
+.onhot{
+    @include size(40px,40px);
+    border-radius: 100%;
+    background: #F56032;
+    position: absolute;
+    color: #ffffff;
+    z-index: 1;
+    font-size: 13px;
+    top:-5px;
+    @include rtl-right(5px);
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    @include rotate(-30deg);
+
+}
+.out-of-stock{
+    background: none repeat scroll 0 0 $out-of-stock;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 2px 5px;
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    right:0;
+}
+/**
+* Product button
+*/
+.caption-product{
+    background: $white;
+    position: relative;
+}
+.button-groups{
+    visibility: visible;
+    opacity: 0;
+    bottom: 10px;
+    position: absolute;
+    z-index: 999;
+    right: 10px;
+}
+.quantity{
+    .qty{
+        appearance: textfield;
+    }
+}
+
+//layout product Taxonomy
+.product-taxonomy{
+    .layout-large{
+        .caption-product{
+            position: absolute;
+            bottom: 30px;
+            left: 50px;
+            background:transparent;
+        }
+        .caption{
+          border-top: 0;
+        }
+    }
+    .product-block{
+      margin-bottom: 30px;
+    }
+    .layout-large .product-block{
+        box-shadow: none;
+    }
+}
+
+//layout product align
+.widgetcontent.center{
+    .name{
+        text-align: center;
+    }
+    .caption{
+        text-align: center;
+    }
+    .caption-product .ground-addcart{
+        text-align: center;
+    }
+    .product-block:hover .ground-addcart{
+        right: 15px;
+    }
+    .layout-large{
+        .name{
+            text-align: left;
+        }
+        .product-block:hover .ground-addcart{
+            right:auto;
+        }
+        .caption-product .ground-addcart{
+          text-align: left;
+        }
+        .caption{
+          text-align: left;
+        }
+    }
+}
+

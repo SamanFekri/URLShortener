@@ -1,0 +1,79 @@
+//style widget Tabs Product
+
+.category-tabs{
+    .center{
+        text-align: center;
+    }
+    .tabs-title-cat{
+        font-size: 14px;
+        padding: 0;
+        font-weight: 300;
+        background: none;
+        display: block;
+        text-transform: uppercase;
+        &:focus,
+        &.focus,
+        &:active:focus,
+        &.focus:active,
+        &.active:focus,
+        &.active.focus{
+            background: none;
+            color: $theme-color;
+        }
+    }
+
+    .cat-title ul li +li:after{
+        content: "/";
+        left: -17px;
+        position: absolute;
+        top: 0;
+    }
+
+    ul{
+       display: inline-block;
+       position: relative;
+        border: none;
+    }
+
+    li{
+        padding-right: 20px;
+        a:hover{
+            background: none;
+        }
+    }
+    li.active > a,
+    li.active > a:hover,
+    li.active > a:focus{
+        background: none;
+        color: $theme-color;
+    }
+    .widgettitle{
+        margin-top: 30px;
+        font-weight: 700;
+        font-size: 20px;
+        span{
+            border: none;
+            &:after,&:before {
+                content:none;
+                border-width: 0;
+            }
+        }
+        &.left{
+            text-align: left;
+        }
+        &.center{
+            text-align: center;
+        }
+        &.right{
+            text-align: right;
+        }
+    }
+    &.category-tabs-filter{
+        .widgettitle{
+            font-size: 30px;
+            padding-bottom: 30px;
+        }
+    }
+}
+
+

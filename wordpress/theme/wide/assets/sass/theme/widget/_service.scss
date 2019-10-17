@@ -1,0 +1,40 @@
+//style widget Service
+.service{
+    @include clearfix();
+    position: relative;
+    padding: 12px 0;
+    cursor: pointer;
+    &:hover .icon-service{
+        @include transition(0.4s);
+        border: 1px solid $theme-color;
+        color: $theme-color;
+    }
+    .icon-service{
+        @include rtl-float-left();
+        @include rtl-margin-right(10px);
+        @include size(45px,45px);
+        border: 1px solid #b3b3b3;
+        border-radius: 100%;
+        line-height: 42px;
+        text-align: center;
+        color:#b3b3b3;
+
+    }
+    .service-description{
+        @include rtl-float-left();
+        width: 70%;
+    }
+    .title-service{
+        @include rtl-text-align-left();
+        text-transform: uppercase;
+        color: $black;
+    }
+    .description {
+        @include rtl-text-align-left();
+        font-size: 13px;
+        margin-top:5px;
+        margin-bottom: 0;
+        font-style: italic;
+        line-height: 12px;
+    }
+}

@@ -1,0 +1,29 @@
+// Style Newsletters
+
+.newsletters{
+    text-align: center;
+    .widgettitle{
+    }
+    .des-newsletter{
+        line-height: 24px;
+        color: #757575;
+    }
+    .group-input-newsletter{
+        margin-top: 25px;
+        display: inline-block;
+    }
+    input,.form-control{
+        height: 50px;
+    }
+    #mc4wp{
+        background: #FFF;
+
+    }
+    .btn-newsletter{
+        background: $color-title;
+        color: #FFF;
+        &:hover{
+            background: $theme-color;
+        }
+    }
+}

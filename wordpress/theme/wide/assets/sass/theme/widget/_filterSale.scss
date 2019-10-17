@@ -1,0 +1,96 @@
+//style widget Filter Sale
+
+.wide_from_filter{
+    display:block;
+    text-align: right;
+    >*{
+        border: 1px solid #f1f1f1;
+        display: inline-block;
+        margin-left: 30px;
+        color: $color-title;
+    }
+    //category
+    .dropdown-arrow select{
+        appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        height:50px;
+        cursor: pointer;
+        padding:7px 40px 7px 15px;
+        option{
+            padding: 10px;
+        }
+    }
+    .dropdown-arrow{
+        position: relative;
+        &::after {
+            background: transparent none repeat scroll 0 0;
+            color: #282828;
+            content: "\f107";
+            cursor: pointer;
+            font-family: "FontAwesome";
+            font-size: 14px;
+            height: 100%;
+            line-height: 25px;
+            pointer-events: none;
+            position: absolute;
+            right: 15px;
+            text-align: center;
+            top: 15px;
+            width: 10px;
+        }
+    }
+    //price
+    .filter_select{
+        padding:0px 40px 0px 15px;
+        position: relative;
+        line-height: 50px;
+        &::after {
+            background: transparent none repeat scroll 0 0;
+            color: #282828;
+            content: "\f107";
+            cursor: pointer;
+            font-family: "FontAwesome";
+            font-size: 14px;
+            height: 100%;
+            line-height: 25px;
+            pointer-events: none;
+            position: absolute;
+            right: 15px;
+            text-align: center;
+            top: 0px;
+            width: 10px;
+            @include transition(0.4s);
+            @include transition-delay(0.4s);
+        }
+    }
+    .filter_select{
+        &.active{
+            &::after{
+                @include transition(0.4s);
+                @include transition-delay(0.4s);
+                content: "\f106";
+            }
+        }
+    }
+}
+.product-image{
+    .countdown-times{
+        display: table;
+        position: absolute;
+        margin-top:0px;
+        top:55%;
+        left: 0;
+        width: 100%;
+        background: rgba(237, 239, 242, 0.7) none repeat scroll 0 0;
+        padding: 10px;
+        color: $color-title;
+        font-size: 12px;
+        b{
+            color: $theme-color;
+        }
+        >*{
+            display: table-cell;
+        }
+    }
+}

@@ -1,0 +1,107 @@
+
+
+$image-url                : '../images/' !default;
+
+
+
+$theme-bg:              #FFF ;
+//$theme-bg:              #EEEEEE ;
+
+
+$theme-color:           #ed145b;
+$theme-color:             #ed145b;
+
+$font-color:            #555555;
+
+
+$border-color-base: 1px solid #ebebeb;
+
+$secondary:         #F3F3F3;    // Secondary buttons
+$secondarytext:     desaturate(darken($secondary, 60%), 21%);
+
+$color-title                :#040203;
+/*btn*/
+$white:	#ffffff;
+$black: $color-title;
+/**/
+
+/*fonts*/
+$font-family-once	    : "Poppins" !default;
+$font-family-two  	    : $font-family-once;
+$font-family-three      : $font-family-once;
+
+$font-size:             13px !default;
+
+//===============================topbar============================
+$topbar-bg              :#1F1B1D;
+$topbar-color           :#aaaaaa;
+$topbar-border-color    :1px solid #232323;
+$topbar-border-bottom   :0px solid transparent;
+
+//===============================Menu============================
+
+$menu-bg                 :#DEDEDE;
+$menu-bg-hover           :transparent;
+
+$menu-color              :#757575;
+$menu-color-hover        :$theme-color ;
+
+$menu-border             :1px solid #f1f1f1;
+
+$menu-padding            :0;
+$menu-rtl                :-15px;
+$icon-bar                 :#040203;
+$icon-bar-hover           :$theme-color;
+//===============================Search============================
+$search-menu              :lighten($menu-bg, 12%);
+$search-color             :#a1a1a1;
+//===============================Buttom============================
+
+$btn-primary-bg:         $theme-color !default; // #337ab7
+$btn-success-bg:         #b7cc16 !default;
+$btn-info-bg:            #4BC5C6 !default;
+$btn-warning-bg:         #DF8B1B !default;
+$btn-danger-bg:          #E3503C !default;
+//btn
+$btn-cart-color:            $white;
+$btn-cart-bg:               #1f1b1c;
+$btn-cart-border:           #1f1b1c;
+$btn-cart-colorhover:       $white;
+$btn-cart-bghover:          $theme-color;
+$btn-cart-borderhover:      $theme-color;
+
+$btn-outline-color:        #8c8c8c;
+$btn-outline-bg:           transparent;
+$btn-outline-border:       transparent;
+$btn-outline-colorhover:   $theme-color;
+$btn-outline-bghover:      transparent;
+$btn-outline-borderhover:  transparent;
+
+$btn-inverse-color:        #8c8c8c;
+$btn-inverse-bg:           transparent;
+$btn-inverse-border:       transparent;
+$btn-inverse-colorhover:   $theme-color;
+$btn-inverse-bghover:      transparent;
+$btn-inverse-borderhover:  transparent;
+
+//===============================Product============================
+
+$sale                       :#c69f73 !default;
+$out-of-stock               :#282828 !default;
+
+//===============================Footer============================
+$footer-top             :#F5F5F5;
+$footer-center          :#F5F5F5;
+$footer-bg              :#F5F5F5;
+$footer-bg-bottom       :#DEDEDE;
+$footer-color           :#5f5f5f;
+$footer-title-color     :$color-title;
+$footer-border-color    :1px solid #424242;
+$footer-border-top      :1px solid #DEDEDE;
+$footer-border-nav      :1px solid #424242;
+
+$coppy-right-color:          #ffffff;
+$coppy-right-color-link:     $theme-color;
+
+//===============================New Letter============================
+$new-letter-color        :#333333;

@@ -1,0 +1,13 @@
+//style widget Baner Slider
+
+.widget-banner-slider{
+    .banner_item_inner{
+        border: 1px solid #ebebeb;
+        padding:15px 0;
+        background: #FFF;
+        > a{
+            display: inline-block;
+        }
+    }
+}
+

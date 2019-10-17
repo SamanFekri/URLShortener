@@ -1,0 +1,47 @@
+//style widget Category Banner
+
+.category-banner{
+    .category-banner-inner{
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        display: block;
+        position: relative;
+        margin-bottom: 30px;
+        &:hover{
+            box-shadow:0 10px 20px 0 rgba(168, 182, 191, 0.6);
+        }
+    }
+    text-align: center;
+    .widgettitle{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .cat-des{
+        padding: 20px 15px;
+        background: #FFF;
+        border-top: 1px solid #ebebeb;
+        min-height: 60px;
+    }
+    .category_thumb{
+        height: auto;
+    }
+    .cat-name{
+        font-weight: 500;
+        float: left;
+        font-size: 14px;
+        line-height: 24px;
+        color: $color-title;
+        &:hover{
+            color: $theme-color;
+        }
+    }
+    .cat-count{
+        background: #EBEFF1;
+        border-radius: 3px;
+        float: right;
+        height: 24px;
+        line-height: 28px;
+        text-align: center;
+        width: 30px;
+    }
+}

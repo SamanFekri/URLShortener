@@ -1,0 +1,182 @@
+/* Slider */
+/* line 3, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+}
+
+/* Arrows */
+/* line 20, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-prev,
+.slick-next {
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  border: none;
+  cursor: pointer;
+  color: transparent;
+  outline: none;
+  background: transparent;
+}
+
+/* line 44, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+/* line 51, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+/* line 57, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-prev:before,
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 38px;
+  opacity: .75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 70, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-prev {
+  left: 3%;
+}
+
+/* line 74, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-next {
+  right: 3%;
+}
+
+/* line 78, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+[dir='rtl'] .slick-prev {
+  right: -25px;
+  left: auto;
+}
+
+/* line 83, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-prev:before {
+  content: '\f104';
+  font-family: FontAweSome;
+}
+
+/* line 88, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+[dir='rtl'] .slick-prev:before {
+  content: '?';
+}
+
+/* line 94, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+[dir='rtl'] .slick-next {
+  right: auto;
+  left: -25px;
+}
+
+/* line 99, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-next:before {
+  content: '\f105';
+  font-family: FontAweSome;
+}
+
+/* line 104, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+[dir='rtl'] .slick-next:before {
+  content: '?';
+}
+
+/* Dots */
+/* line 110, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-dots {
+  position: absolute;
+  bottom: -0px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+/* line 125, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* line 138, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+/* line 156, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+
+/* line 161, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+/* line 166, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-dots li button:before {
+  font-family: 'FontAwesome';
+  font-size: 10px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "\f111";
+  text-align: center;
+  opacity: .25;
+  color: #FFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 188, D:/XAMPP/htdocs/wp-wide/wp-content/themes/wide/assets/sass/plugins/slick-theme.scss */
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #FFF;
+}
+
+/*# sourceMappingURL=../../css/plugins/slick-theme.map */

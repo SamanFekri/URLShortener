@@ -1,0 +1,26 @@
+
+/* ================== Canvas Menu ===================== */
+body{
+    overflow-x: hidden;
+}
+
+@media (max-width: $screen-sm-max) {
+    .slicknav_menu {
+        .slicknav_icon-bar {
+            font-size: 20px;
+        }
+    }
+    .slicknav_menu {
+        .slicknav_no-text {
+            margin-top: 13px;
+        }
+    }
+    .slicknav_btn{
+        left: 20px;
+        display: block !important;
+        bottom: 0;
+        vertical-align: middle;
+        top: 50%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,300 @@
+
+//button base
+//button-variables-outline($color, $background, $border, $colorhover, $bghover, $borderhover )
+
+html input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    line-height: 36px;
+    background: #5EBDC7;
+    border: 1px solid #5EBDC7;
+    color: #fff;
+    border-radius: 1px;
+}
+
+/* btn 1 */
+.btn-outline{
+  @include button-variables-outline($theme-color, transparent, $theme-color, $theme-color, transparent, $theme-color);
+}
+
+/* btn 2 */
+.btn-inverse{
+    @include button-variables-outline($white, $theme-color , $theme-color ,$white, $theme-color ,  $theme-color);
+}
+
+/* btn-3 */
+.btn-variant{
+    @include button-variables-outline($white, $theme-color , $theme-color ,$white,darken($theme-color, 10%),  darken($theme-color, 10%));
+    line-height: inherit !important;
+}
+
+.button{
+    @include button-variables-outline($white, #282828 , #282828 , $white, $theme-color ,  $theme-color);
+    padding:12px 50px;
+    border-width:0;
+}
+
+//ADD TO CART ----------------------------------------------------------------------------------------------------------
+.button.single_add_to_cart_button{
+    padding: 14px 50px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    color: $white;
+    background-color: #1f1b1c;
+    border: 1px solid #1f1b1c;
+    font-family: $font-family-once;
+    font-size: 12px;
+    font-weight: 700;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background-color: $theme-color;
+        border: 1px solid $theme-color;
+    }
+}
+
+.page-content .vc_btn3.vc_btn3-style-custom{
+    padding: 10px 30px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    letter-spacing: 0.1em;
+    color: $white;
+    cursor: pointer;
+    background-color: $theme-color;
+    border: 1px solid $theme-color;
+    font-family: $font-family-once;
+    font-size: 12px;
+    font-weight: 500;
+    background-image:none;
+    box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background-color: $theme-color;
+        border: 1px solid $theme-color;
+        box-shadow:none;
+    }
+}
+
+
+.add_to_cart_button,.button.product_type_simple{
+//    button-variables-outline($color, $background, $border, $colorhover, $bghover, $borderhover )
+
+    @include button-variables-outline($theme-color,transparent, transparent, $theme-color, transparent, transparent);
+    padding: 0;
+    font-weight: 500;
+    box-shadow: none;
+    .fa-shopping-cart{
+        display: none;
+    }
+    &.loading {
+        opacity: 0.7;
+        position: relative;
+        padding:0px 30px 0px 0px;
+        &:after {
+            font-family: "fontawesome";
+            content: "\f110";
+            vertical-align: top;
+            -webkit-font-smoothing: antialiased;
+            font-size: 14px;
+            position: absolute;
+            right: 10px;
+            -webkit-animation: fa-spin 1s infinite steps(8);
+            animation: fa-spin 1s infinite steps(8);
+        }
+    }
+    &.added{
+        display: none;
+    }
+}
+.added_to_cart{
+    @include button-variables-outline($theme-color,transparent, transparent, $theme-color, transparent, transparent);
+    padding: 0;
+    font-weight: 500;
+    box-shadow: none;
+
+}
+
+//wishlist -------------------------------------------------------------------------------------------------------------
+.yith-wcwl-add-to-wishlist{
+    margin: 0;
+    position: relative;
+    a{
+        font-size: 0;
+        &:after{
+            content: "\f004";
+            margin: auto;
+            font-family: "fontawesome";
+            font-size: 14px;
+            line-height: 42px;
+            text-align: center;
+            background: $white;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            display: block;
+            //box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.3);
+        }
+    }
+    .ajax-loading{
+        left: 0;
+        margin: auto;
+        position: absolute;
+        right: 0;
+        top: 32px;
+    }
+}
+.yith-wcwl-wishlistexistsbrowse{
+    a{
+        &:after{
+            background: $theme-color;
+            color: $white;
+        }
+    }
+}
+
+
+//quick view -----------------------------------------------------------------------------------------------------------
+.yith-wcqv-button{
+    display: none;
+}
+
+.quick-view{
+    opacity: 0;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -22px;
+    margin-left: -22px;
+    display: inline-block;
+    visibility: hidden;
+    @include transition(0.4s);
+    z-index: 99;
+    .yith-wcqv-button{
+        display: block;
+        position: relative;
+        text-align: center;
+    }
+    span{
+        color: #fff;
+        font-size: 24px;
+        padding:0;
+        right:1px;
+        top:2px;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+
+    }
+    a{
+        background: $theme-color;
+        border-radius: 100%;
+        border-width: 0;
+        height: 45px;
+        padding: 10px;
+        text-align: center;
+        width: 45px;
+        z-index: 10;
+        opacity: 0.8;
+    }
+
+}
+
+
+
+
+.btn-updatecart{
+    display: inline-block;
+    text-align: center;
+    padding: 15px 40px;
+    width: 100%;
+    font-size: 16px;
+    background: #FFF;
+    text-transform: uppercase;
+    border: 1px solid #cecece;
+    color:#787878 ;
+    height: auto;
+    cursor: pointer !important;
+    @include transition(0.4s);
+    &:hover{
+        @include transition(0.4s);
+        color:#1f1b1c ;
+        border: 1px solid #cecece;
+    }
+}
+.btn-checkout{
+    color:$white ;
+    display: inline-block;
+    text-align: center;
+    padding: 22px 40px;
+    width: 100%;
+    font-size: 16px;
+    background: $theme-color;
+    border: 1px solid $theme-color;
+    text-transform: uppercase;
+    font-weight: 400;
+    @include transition(0.4s);
+    &:hover{
+        @include transition(0.4s);
+        border: 1px solid #1f1b1c;
+        background: #1f1b1c;
+        color:$white ;
+    }
+}
+.btn-order{
+    display: inline-block;
+    text-align: center;
+    padding: 15px 40px;
+    width: 100%;
+    font-size: 16px;
+    color: $white !important;
+    height: auto !important;
+    background: $theme-color;
+    border: 1px solid $theme-color;
+    @include transition(0.4s);
+    &:hover{
+        @include transition(0.4s);
+        border: 1px solid #1f1b1c;
+        background: #1f1b1c;
+        color:$white ;
+    }
+}
+
+.btn-mini-search{
+    font-size: 17px;
+    border: none;
+    color: #333;
+    background: none;
+    cursor: pointer;
+    z-index: 99;
+    position: relative;
+}
+.btn-filter{
+    @include button-variables-outline($white, #23282D , #23282D ,$white,darken(#23282D, 10%),  darken(#23282D, 10%));
+    padding: 5px 20px;
+}
+.btn{
+    border-radius:3px;
+}
+.btn-readmore {
+    @include transition(0.4s);
+    border: 1px solid $font-color;
+    display: inline-block;
+    font-size: 12px;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    &:hover {
+        border: 1px solid #5EBDC7;
+    }
+}
+
+.btn-newsletter{
+    font-size: 12px;
+    font-weight:400;
+    height: 40px !important;
+    background: #5EBDC7 !important;
+    line-height: inherit !important;
+}

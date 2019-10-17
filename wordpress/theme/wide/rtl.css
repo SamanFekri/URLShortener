@@ -1,0 +1,163 @@
+/*
+Theme Name: Ri wide
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See: https://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+/* Images */
+ul {
+    list-style-type: square;
+}
+.alignleft {
+    float: right;
+}
+
+.alignright {
+    float: left;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.wp-caption.alignleft,
+img.alignleft {
+    margin: 5px 20px 5px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 10px 5px 0;
+}
+
+figure.wp-caption.alignright,
+img.alignright {
+    margin: 5px 0 5px 20px;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 5px 10px;
+}
+
+img.aligncenter {
+    margin: 5px auto;
+}
+
+img.alignnone {
+    margin: 5px 0;
+}
+
+.wp-caption .wp-caption-text,
+.entry-caption,
+.gallery-caption {
+    color: #220e10;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0 0 24px;
+}
+
+div.wp-caption.alignright img[class*="wp-image-"] {
+    float: left;
+}
+
+div.wp-caption.alignright .wp-caption-text {
+    padding-right: 10px;
+}
+
+img.wp-smiley,
+.rsswidget img {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.wp-caption.alignleft + ul,
+.wp-caption.alignleft + ol {
+    list-style-position: inside;
+}
+.hentry.sticky:not(.has-post-thumbnail) {
+    padding-top: -webkit-calc(7.6923% + 24px);
+    padding-top: calc(7.6923% + 24px);
+}
+.hentry.sticky:not(.has-post-thumbnail) {
+    padding-top: -webkit-calc(7.6923% + 24px);
+    padding-top: calc(7.6923% + 24px);
+}
+.sticky-post {
+    background-color: #333;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 0.25em 0.5em;
+    position: absolute;
+    top: 0;
+    text-transform: uppercase;
+}
+.sticky .posted-on {
+    display: none;
+}
+.hentry.sticky:not(.has-post-thumbnail) {
+    padding-top: inherit;
+}
+.sticky-post {
+    background: #000 !important;
+    color: #fff !important;
+}
+.entry-content img, .entry-summary img, .comment-content img, .widget img, .wp-caption{
+    max-width: 100%;
+}
+.gallery {
+    margin-bottom: 1.6em;
+}
+.gallery-item {
+    display: inline-block;
+    padding: 1.79104%;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+.gallery-icon img {
+    margin: 0 auto;
+}
+.gallery-caption {
+    color: rgba(51, 51, 51, 0.7);
+    display: block;
+    font-family: "Noto Sans",sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 0.5em 0;
+}
+.gallery-columns-6 .gallery-caption, .gallery-columns-7 .gallery-caption, .gallery-columns-8 .gallery-caption, .gallery-columns-9 .gallery-caption {
+    display: none;
+}

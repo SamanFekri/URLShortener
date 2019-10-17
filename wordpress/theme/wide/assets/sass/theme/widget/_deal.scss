@@ -1,0 +1,96 @@
+//style widget Baner Slider
+
+.widget_deals{
+    //layout
+    padding-top: 100px;
+    padding-bottom:200px;
+    text-align: right;
+    .item-deal{
+        display: inline-block;
+        padding:0 80px;
+        text-align: left;
+        position: relative;
+        max-height: 360px;
+
+    }
+    .image-countdown{
+        text-align: left;
+        max-width: 680px;
+    }
+    .sub_title{
+        margin: 0;
+        padding: 0;
+        font-size: 21px;
+        font-weight: 300;
+    }
+    .description{
+        margin-bottom: 30px;
+    }
+    .ground-title >*{
+        display: inline-block;
+    }
+    .box_title{
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 36px;
+        color: $color-title;
+        font-weight: 700;
+        text-transform: uppercase;
+
+    }
+    .deal-countdown{
+        margin: 50px 0  15px;
+    }
+    .countdown-times{
+        display: inline-block;
+        @include rtl-clear-left();
+    }
+    .countdown-times >*{
+        display:block;
+        color: $color-title;
+        color: #555555;
+        @include rtl-float-left();
+        text-align: center;
+        margin-right: 10px;
+
+        > b{
+            background: #fff none repeat scroll 0 0;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+            display: block;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 30px;
+            padding: 25px;
+            margin-bottom:15px;
+            min-width: 100px;
+            position: relative;
+            border-radius: 2px;
+        }
+        &.day > b {
+            margin-left:0;
+        }
+        &.seconds{
+            margin: 0;
+        }
+    }
+    .sale-off{
+        padding: 0 10px;
+        font-size: 36px;
+        color: $theme-color;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .deals-information{
+        margin-top: 20px;
+    }
+    .na-gallery-image{
+        padding-left: 10%;
+    }
+    .product-thumbnails{
+        display: none !important;
+    }
+}
+.lof-labelexpired{
+    display: none;
+}

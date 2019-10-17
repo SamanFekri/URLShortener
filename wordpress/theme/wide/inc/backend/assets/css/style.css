@@ -1,0 +1,127 @@
+.nano-wrap{
+    max-width:1200px;
+}
+
+.nano-wrap .group-title{
+    float: left;
+}
+.nano-wrap .nano-logo{
+    float: right;
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    background: white;
+    position: relative;
+}
+.nano-wrap h1{
+    display: inline-block;
+}
+.nano-wrap h1 strong{
+    text-transform: uppercase;
+}
+.nano-wrap .version-theme{
+    bottom: 15px;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.nano-wrap .group-wellcome{
+    height: 115px;
+}
+.nano-wrap .theme{
+    overflow: hidden;
+}
+.nano-wrap .nano-update{
+    background: #d7572c none repeat scroll 0 0;
+    color: white;
+    cursor: initial;
+    padding: 15px 0 15px 15px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.nano-install-plugins .theme-browser .plugin-required {
+    background: #d2004f none repeat scroll 0 0;
+    border-radius: 3px;
+    bottom: 60px;
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 10px;
+    position: absolute;
+    right: 10px;
+    text-transform: uppercase;
+}
+.nano-install-plugins .theme-browser .active .plugin-required{
+    background: #43B10F;
+}
+
+.nano-install-plugins .theme-browser .plugin-info {
+    bottom: 60px;
+    color: black;
+    font-size: 13px;
+    font-weight: normal;
+    left: 10px;
+    position: absolute;
+    width: 100%;
+}
+/*table*/
+.nav-tab-wrapper .active {
+  background: #fff;
+}
+.tab-content {
+    padding: 30px 0;
+}
+.tab-content .tab-pane {
+    display: none;
+}
+.tab-content .tab-pane.active {
+    display: block;
+}
+.theme.col-12{
+    width:100%;
+}
+
+.theme.col-3{
+    width:30%;
+}
+.theme-browser .theme.col-3:nth-child(3n){
+    margin-right:0;
+}
+.theme-browser .theme.col-3:nth-child(4n){
+    margin-right:3%;
+}
+
+.theme-browser .theme-update.nano-update::before{
+    content: none;
+}
+.nano-wrap .theme-browser .theme-update.nano-update{
+    cursor:initial;
+}
+.nano-wrap .button-update{
+    background: #D7572C;
+    box-shadow:0 1px 0 #D7572C;
+    border-color:#D7572C;
+    color: white;
+}
+.nano-wrap .button-update:hover{
+    background: #fff;
+    box-shadow:0 1px 0 #ccc;
+    border-color:#ccc;
+    color: #D7572C;
+}
+.nano-wrap .button-update:hover .dashicons{
+    color: #D7572C;
+}
+
+.nano-wrap .theme-browser .theme .theme-update{
+    border-bottom:none;
+}
+.nano-wrap .button-update .dashicons{
+    line-height: 27px;
+    font-size: 17px;
+    color: white;
+}
